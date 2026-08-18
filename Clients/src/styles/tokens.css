@@ -1,0 +1,123 @@
+/* ============================================================
+   DESIGN TOKENS — single source of truth for the entire theme.
+   Change a value here and it propagates everywhere: Tailwind
+   utilities (via @theme below), component inline styles, and
+   any future dark-mode / white-label overrides.
+   ============================================================ */
+
+:root {
+  /* ---------- Brand ---------- */
+  --color-navy: #1B3A6B;
+  --color-navy-dark: #142C52;
+  --color-navy-light: #EAF0F9;
+  --color-navy-on-tint: var(--color-navy);
+
+  --color-green: #1B6B3A;
+  --color-green-dark: #134E2A;
+  --color-green-light: #E7F5EC;
+  --color-green-on-tint: var(--color-green);
+
+  --color-amber: #F59E0B;
+  --color-amber-dark: #B97309;
+  --color-amber-light: #FEF3E2;
+
+  /* ---------- Surfaces ---------- */
+  --color-bg: #F8F9FA;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+
+  /* ---------- Text ---------- */
+  --color-text-primary: #1E293B;
+  --color-text-secondary: #64748B;
+  --color-text-tertiary: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+
+  /* ---------- Semantic ---------- */
+  --color-success: #16A34A;
+  --color-success-bg: #E3F7EF;
+  --color-warning: #B97309;
+  --color-warning-bg: #FEF3E2;
+  --color-danger: #DC2626;
+  --color-danger-bg: #FEEAEA;
+  --color-info: #0EA5E9;
+  --color-info-bg: #E5F4FC;
+
+  /* ---------- 8-stage lifecycle palette ---------- */
+  --color-stage-1: #3B82F6;   /* Project Initiation — New */
+  --color-stage-2: #10B981;   /* Site Survey & Analysis — In progress */
+  --color-stage-3: #7C3AED;   /* Concept Design — Design development */
+  --color-stage-4: #F97316;   /* Preliminary Design — Review pending */
+  --color-stage-5: #0EA5E9;   /* Detailed Design & Documentation */
+  --color-stage-6: #EF4444;   /* Approval & Permissions — Govt approval */
+  --color-stage-7: #F59E0B;   /* Construction Support — Execution */
+  --color-stage-8: #22C55E;   /* Final Review & Submission — Completed */
+
+  /* ---------- Typography ---------- */
+  --font-sans: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "Consolas", monospace;
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadow ---------- */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.12);
+
+  /* ---------- Portal accents (swap per-portal at the root) ---------- */
+  --color-portal-primary: var(--color-navy);
+  --color-portal-primary-dark: var(--color-navy-dark);
+  --color-portal-primary-light: var(--color-navy-light);
+  /* Icon/text color when sitting on a *-light tinted chip background.
+     Same as portal-primary in light mode; brightened in dark mode so
+     icons stay visible against a low-opacity tint. */
+  --color-portal-primary-on-tint: var(--color-navy);
+}
+
+/* Client portal overrides just the portal accent — every component
+   that uses --color-portal-* automatically re-themes. */
+[data-portal="client"] {
+  --color-portal-primary: var(--color-green);
+  --color-portal-primary-dark: var(--color-green-dark);
+  --color-portal-primary-light: var(--color-green-light);
+  --color-portal-primary-on-tint: var(--color-green);
+}
+
+/* Dark mode — wired to the theme toggle in the Topbar (uiSlice.toggleTheme) */
+[data-theme="dark"] {
+  --color-bg: #0F172A;
+  --color-surface: #1E293B;
+  --color-border: #334155;
+  --color-border-strong: #475569;
+  --color-text-primary: #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-tertiary: #64748B;
+
+  /* Semantic tints need to stay legible on dark surfaces — same hue,
+     lower-opacity dark backing instead of the pale light-mode tint. */
+  --color-success-bg: rgba(22, 163, 74, 0.16);
+  --color-warning-bg: rgba(185, 115, 9, 0.18);
+  --color-danger-bg: rgba(220, 38, 38, 0.16);
+  --color-info-bg: rgba(14, 165, 233, 0.16);
+  --color-amber-light: rgba(245, 158, 11, 0.16);
+
+  /* Portal "light" accent (used for icon chips, active nav, etc.) */
+  --color-navy-light: rgba(59, 130, 246, 0.18);
+  --color-green-light: rgba(34, 197, 94, 0.18);
+  --color-navy-on-tint: #60A5FA;
+  --color-green-on-tint: #4ADE80;
+}
+
+[data-theme="dark"] [data-portal="client"] {
+  --color-portal-primary-light: rgba(34, 197, 94, 0.18);
+  --color-portal-primary-on-tint: #4ADE80;
+}
+
+[data-theme="dark"] [data-portal="admin"] {
+  --color-portal-primary-light: rgba(59, 130, 246, 0.18);
+  --color-portal-primary-on-tint: #60A5FA;
+}

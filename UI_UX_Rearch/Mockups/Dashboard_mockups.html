@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Architecture Platform — Dashboard Mockups</title>
+<style>
+  :root{
+    --navy:#1B3A6B; --navy-dark:#142C52; --navy-light:#EAF0F9;
+    --green:#1B6B3A; --green-dark:#134E2A; --green-light:#E7F5EC;
+    --amber:#F59E0B; --amber-dark:#B97309;
+    --bg:#F8F9FA; --surface:#FFFFFF;
+    --text:#1E293B; --text2:#64748B; --text3:#94A3B8;
+    --border:#E2E8F0;
+    --s-new:#3B82F6; --s-prog:#10B981; --s-design:#7C3AED; --s-review:#F97316;
+    --s-doc:#0EA5E9; --s-govt:#EF4444; --s-exec:#F59E0B; --s-done:#22C55E;
+    --radius-sm:6px; --radius-md:10px; --radius-lg:14px;
+    --shadow-sm:0 1px 3px rgba(15,23,42,0.06), 0 1px 2px rgba(15,23,42,0.04);
+    --shadow-md:0 4px 12px rgba(15,23,42,0.08);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    background:#0d1424;
+    color:var(--text);
+    padding:48px 24px 96px;
+  }
+  .canvas-label{
+    max-width:1360px; margin:0 auto 18px;
+    color:#94A3B8; font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+    display:flex; align-items:center; gap:10px;
+  }
+  .canvas-label .line{flex:1; height:1px; background:rgba(255,255,255,0.12);}
+  .app-frame{
+    max-width:1360px; margin:0 auto 64px;
+    border-radius:18px; overflow:hidden;
+    box-shadow:0 24px 60px rgba(0,0,0,0.45);
+    border:1px solid rgba(255,255,255,0.06);
+  }
+  .browser-chrome{
+    background:#1A2332; padding:12px 18px; display:flex; align-items:center; gap:14px;
+  }
+  .dot{width:11px; height:11px; border-radius:50%;}
+  .dot.r{background:#FF5F57;} .dot.y{background:#FEBC2E;} .dot.g{background:#28C840;}
+  .url-pill{
+    flex:1; background:#0F1623; border-radius:7px; padding:6px 14px;
+    font-size:12.5px; color:#7C8AA0; display:flex; align-items:center; gap:8px;
+  }
+  .url-pill i{font-size:14px;}
+
+  /* ============ APP LAYOUT ============ */
+  .app{display:flex; min-height:780px; background:var(--bg);}
+  .sidebar{
+    width:236px; background:var(--navy); flex-shrink:0;
+    display:flex; flex-direction:column; padding:24px 0;
+  }
+  .sidebar.client{background:var(--green);}
+  .brand{
+    display:flex; align-items:center; gap:10px; padding:0 24px 28px;
+    border-bottom:1px solid rgba(255,255,255,0.12); margin-bottom:20px;
+  }
+  .brand-mark{
+    width:34px; height:34px; border-radius:8px; background:var(--amber);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .brand-mark i{color:#1A1305; font-size:18px;}
+  .brand-text{color:#fff;}
+  .brand-text .name{font-size:14.5px; font-weight:700; letter-spacing:.01em;}
+  .brand-text .tag{font-size:10.5px; color:rgba(255,255,255,0.55); font-weight:500; letter-spacing:.04em;}
+
+  .nav-section-label{
+    color:rgba(255,255,255,0.4); font-size:10.5px; font-weight:700;
+    letter-spacing:.08em; text-transform:uppercase; padding:14px 24px 8px;
+  }
+  .nav-item{
+    display:flex; align-items:center; gap:12px; padding:10px 24px;
+    color:rgba(255,255,255,0.72); font-size:13.5px; font-weight:500;
+    cursor:default; position:relative; border-left:3px solid transparent;
+  }
+  .nav-item i{font-size:18px; width:18px;}
+  .nav-item.active{
+    background:rgba(255,255,255,0.1); color:#fff; border-left:3px solid var(--amber);
+  }
+  .sidebar.client .nav-item.active{border-left:3px solid #FFD166;}
+  .nav-item .nbadge{
+    margin-left:auto; background:var(--amber); color:#1A1305; font-size:10.5px;
+    font-weight:700; padding:1px 7px; border-radius:99px;
+  }
+  .sidebar.client .nav-item .nbadge{background:#FFD166;}
+
+  .sidebar-foot{
+    margin-top:auto; padding:16px 24px 0 24px; border-top:1px solid rgba(255,255,255,0.12);
+  }
+  .user-chip{display:flex; align-items:center; gap:10px; padding-top:16px;}
+  .avatar{
+    width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.15);
+    display:flex; align-items:center; justify-content:center; color:#fff; font-size:12.5px; font-weight:700;
+    flex-shrink:0;
+  }
+  .user-chip .uname{color:#fff; font-size:13px; font-weight:600;}
+  .user-chip .urole{color:rgba(255,255,255,0.55); font-size:11px;}
+
+  .main{flex:1; min-width:0; display:flex; flex-direction:column;}
+  .topbar{
+    background:var(--surface); border-bottom:1px solid var(--border);
+    padding:18px 32px; display:flex; align-items:center; justify-content:space-between;
+  }
+  .page-title{font-size:21px; font-weight:700; color:var(--text); letter-spacing:-.01em;}
+  .page-sub{font-size:13px; color:var(--text2); margin-top:2px;}
+  .topbar-actions{display:flex; align-items:center; gap:14px;}
+  .icon-btn{
+    width:36px; height:36px; border-radius:var(--radius-sm); border:1px solid var(--border);
+    background:#fff; display:flex; align-items:center; justify-content:center; color:var(--text2);
+    position:relative;
+  }
+  .icon-btn i{font-size:17px;}
+  .icn{width:1em; height:1em; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; vertical-align:-0.18em; display:inline-block;}
+  .icon-btn .dot-alert{
+    position:absolute; top:6px; right:7px; width:7px; height:7px; border-radius:50%;
+    background:#EF4444; border:1.5px solid #fff;
+  }
+  .btn{
+    border:none; border-radius:var(--radius-sm); font-size:13.5px; font-weight:600;
+    padding:9px 16px; display:flex; align-items:center; gap:7px; cursor:default;
+  }
+  .btn i{font-size:16px;}
+  .btn-primary{background:var(--navy); color:#fff;}
+  .btn-primary.client{background:var(--green);}
+  .search-box{
+    display:flex; align-items:center; gap:8px; background:var(--bg); border:1px solid var(--border);
+    border-radius:var(--radius-sm); padding:8px 12px; width:220px; color:var(--text3); font-size:13px;
+  }
+  .search-box i{font-size:15px;}
+
+  .content{padding:28px 32px; flex:1; overflow:hidden;}
+
+  /* KPI cards */
+  .kpi-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px;}
+  .kpi-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg);
+    padding:18px 20px; box-shadow:var(--shadow-sm);
+  }
+  .kpi-top{display:flex; align-items:flex-start; justify-content:space-between;}
+  .kpi-label{font-size:12px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:.04em;}
+  .kpi-icon{width:30px; height:30px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:15px;}
+  .kpi-value{font-size:28px; font-weight:800; color:var(--text); margin-top:10px; letter-spacing:-.01em;}
+  .kpi-delta{font-size:12px; font-weight:600; margin-top:6px; display:flex; align-items:center; gap:4px;}
+  .kpi-delta.up{color:#16A34A;} .kpi-delta.flat{color:var(--text3);} .kpi-delta.warn{color:var(--amber-dark);}
+
+  /* Two column layout */
+  .grid-2col{display:grid; grid-template-columns:1.55fr 1fr; gap:18px; align-items:start;}
+
+  .panel{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-sm); margin-bottom:18px; overflow:hidden;
+  }
+  .panel-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 20px; border-bottom:1px solid var(--border);
+  }
+  .panel-title{font-size:14.5px; font-weight:700; color:var(--text);}
+  .panel-link{font-size:12.5px; font-weight:600; color:var(--navy);}
+  .sidebar.client ~ .main .panel-link, .panel-link.client{color:var(--green);}
+  .panel-body{padding:18px 20px;}
+
+  /* Stage tracker */
+  .stage-tracker{display:flex; align-items:flex-start; gap:0; overflow-x:auto; padding-bottom:6px;}
+  .stage-node{display:flex; flex-direction:column; align-items:center; flex:1; min-width:74px; position:relative;}
+  .stage-connector{
+    position:absolute; top:17px; left:-50%; width:100%; height:2px; background:var(--border); z-index:0;
+  }
+  .stage-node:first-child .stage-connector{display:none;}
+  .stage-circle{
+    width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    font-size:13px; font-weight:700; color:#fff; z-index:1; border:3px solid var(--surface);
+  }
+  .stage-label{font-size:10.5px; font-weight:600; color:var(--text2); text-align:center; margin-top:8px; line-height:1.3; max-width:80px;}
+  .stage-node.done .stage-connector{background:#22C55E;}
+  .stage-node.current .stage-label{color:var(--text); font-weight:700;}
+
+  /* Project rows */
+  .proj-row{
+    display:flex; align-items:center; gap:14px; padding:13px 0; border-bottom:1px solid var(--border);
+  }
+  .proj-row:last-child{border-bottom:none;}
+  .proj-thumb{
+    width:40px; height:40px; border-radius:9px; flex-shrink:0; display:flex; align-items:center; justify-content:center;
+    font-size:17px;
+  }
+  .proj-info{flex:1; min-width:0;}
+  .proj-name{font-size:13.5px; font-weight:600; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .proj-client{font-size:12px; color:var(--text2); margin-top:1px;}
+  .proj-progress-wrap{width:120px; flex-shrink:0;}
+  .proj-bar-track{height:6px; border-radius:99px; background:var(--bg); overflow:hidden;}
+  .proj-bar-fill{height:100%; border-radius:99px;}
+  .proj-pct{font-size:11px; color:var(--text2); margin-top:4px; text-align:right;}
+  .badge{
+    font-size:10.5px; font-weight:700; padding:4px 10px; border-radius:99px; text-transform:uppercase;
+    letter-spacing:.02em; white-space:nowrap;
+  }
+
+  /* Approval queue list */
+  .queue-item{display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--border);}
+  .queue-item:last-child{border-bottom:none;}
+  .queue-icon{width:32px; height:32px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:15px; flex-shrink:0;}
+  .queue-text{flex:1; min-width:0;}
+  .queue-title{font-size:13px; font-weight:600; color:var(--text);}
+  .queue-meta{font-size:11.5px; color:var(--text2); margin-top:1px;}
+  .chip-btn{
+    font-size:11px; font-weight:700; padding:5px 11px; border-radius:99px; flex-shrink:0; border:1px solid;
+  }
+
+  /* Activity feed */
+  .activity-item{display:flex; gap:12px; padding:11px 0; border-bottom:1px solid var(--border);}
+  .activity-item:last-child{border-bottom:none;}
+  .activity-dot{width:8px; height:8px; border-radius:50%; margin-top:5px; flex-shrink:0;}
+  .activity-text{font-size:12.5px; color:var(--text); line-height:1.5;}
+  .activity-text b{font-weight:700;}
+  .activity-time{font-size:11px; color:var(--text3); margin-top:2px;}
+
+  /* Calendar mini */
+  .deadline-item{display:flex; align-items:center; gap:12px; padding:11px 0; border-bottom:1px solid var(--border);}
+  .deadline-item:last-child{border-bottom:none;}
+  .date-box{
+    width:42px; height:42px; border-radius:9px; background:var(--navy-light); flex-shrink:0;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+  }
+  .date-box .mon{font-size:9px; font-weight:700; color:var(--navy); text-transform:uppercase;}
+  .date-box .day{font-size:15px; font-weight:800; color:var(--navy); line-height:1;}
+  .deadline-text{flex:1;}
+  .deadline-title{font-size:12.5px; font-weight:600; color:var(--text);}
+  .deadline-meta{font-size:11px; color:var(--text2);}
+
+  /* CLIENT specific */
+  .progress-hero{
+    background:linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    border-radius:var(--radius-lg); padding:24px 26px; color:#fff; position:relative; overflow:hidden;
+    margin-bottom:18px;
+  }
+  .progress-hero::after{
+    content:''; position:absolute; right:-40px; top:-40px; width:180px; height:180px; border-radius:50%;
+    background:rgba(255,255,255,0.06);
+  }
+  .hero-top{display:flex; align-items:flex-start; justify-content:space-between; position:relative; z-index:1;}
+  .hero-eyebrow{font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:rgba(255,255,255,0.7);}
+  .hero-name{font-size:19px; font-weight:700; margin-top:4px;}
+  .hero-stage-badge{
+    background:rgba(255,255,255,0.18); font-size:11px; font-weight:700; padding:5px 12px; border-radius:99px;
+  }
+  .hero-progress-row{display:flex; align-items:baseline; gap:10px; margin-top:18px; position:relative; z-index:1;}
+  .hero-pct{font-size:34px; font-weight:800;}
+  .hero-pct-label{font-size:12.5px; color:rgba(255,255,255,0.75);}
+  .hero-bar-track{height:8px; background:rgba(255,255,255,0.2); border-radius:99px; margin-top:12px; position:relative; z-index:1;}
+  .hero-bar-fill{height:100%; background:#fff; border-radius:99px;}
+
+  .doc-row{display:flex; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--border);}
+  .doc-row:last-child{border-bottom:none;}
+  .doc-icon{width:34px; height:34px; border-radius:8px; background:var(--green-light); display:flex; align-items:center; justify-content:center; color:var(--green); font-size:16px; flex-shrink:0;}
+  .doc-name{font-size:13px; font-weight:600; color:var(--text);}
+  .doc-meta{font-size:11.5px; color:var(--text2);}
+  .doc-actions{display:flex; gap:8px;}
+  .doc-actions i{font-size:16px; color:var(--text2);}
+
+  .footer-credit{text-align:center; color:#56627A; font-size:12px; margin-top:-32px; margin-bottom:64px;}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-building-castle" viewBox="0 0 24 24"><path d="M4 21h16M5 21V10l-1-2 3-2 1 2h8l1-2 3 2-1 2v11M9 21v-5h6v5M9 10V7h2v3M13 10V7h2v3"/></symbol>
+<symbol id="i-layout-dashboard" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="4" rx="1"/><rect x="13" y="11" width="7" height="9" rx="1"/><rect x="4" y="14" width="7" height="6" rx="1"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24"><path d="M4 6a1 1 0 0 1 1-1h4l2 2h8a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6z"/></symbol>
+<symbol id="i-folders" viewBox="0 0 24 24"><path d="M7 9a1 1 0 0 1 1-1h3l1.5 1.5H19a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V9z"/><path d="M3 7V5a1 1 0 0 1 1-1h2.5L8 5.5"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 2.5-5 6-5s6 2 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2c2.4.3 4 1.8 4.5 4.2"/></symbol>
+<symbol id="i-user-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="10" r="3"/><path d="M6.5 19c1-2.5 3-4 5.5-4s4.5 1.5 5.5 4"/></symbol>
+<symbol id="i-checklist" viewBox="0 0 24 24"><path d="M5 6h2M5 12h2M5 18h2"/><path d="M10 6h9M10 12h9M10 18h9"/><path d="M4 6l1 1 1.5-1.5"/></symbol>
+<symbol id="i-message-circle-2" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3 6.2L4 19l1-3.2A7.9 7.9 0 0 1 4 12z"/></symbol>
+<symbol id="i-chart-bar" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M4 20h16"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M7 17a5 5 0 0 1 10 0"/><path d="M5 17h14M9 17v0a3 3 0 0 0 6 0v0"/><path d="M12 4v2"/></symbol>
+<symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.1l2-1.5-1.6-2.7-2.3.9a7 7 0 0 0-1.9-1.1L14.7 4h-3l-.4 2.5a7 7 0 0 0-1.9 1.1l-2.3-.9-1.6 2.7 2 1.5A7 7 0 0 0 5 12c0 .4 0 .7.1 1.1l-2 1.5 1.6 2.7 2.3-.9c.6.5 1.2.8 1.9 1.1L9.7 20h3l.4-2.5c.7-.3 1.3-.6 1.9-1.1l2.3.9 1.6-2.7-2-1.5c.1-.4.1-.7.1-1.1z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-building-skyscraper" viewBox="0 0 24 24"><path d="M5 21V6l7-3 7 3v15"/><path d="M5 21h14M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></symbol>
+<symbol id="i-clock-hour-4" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+<symbol id="i-calendar-event" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="1.5"/><path d="M4 10h16M8 3v4M16 3v4"/><circle cx="9" cy="14" r="1"/></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.3l2.4 2.3 4.6-5.2"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+<symbol id="i-alert-triangle" viewBox="0 0 24 24"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></symbol>
+<symbol id="i-file-text" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M9 12h6M9 15h6M9 9h2"/></symbol>
+<symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 4a8 8 0 1 0 0 16c1 0 1.7-.8 1.7-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.6 1.7-1.6h1.9A3.7 3.7 0 0 0 20 10.7C20 6.8 16.4 4 12 4z"/><circle cx="8.3" cy="11" r="1.1"/><circle cx="9.8" cy="7.7" r="1.1"/><circle cx="14.2" cy="7.7" r="1.1"/><circle cx="16" cy="11" r="1.1"/></symbol>
+<symbol id="i-blueprint" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M8 8h8v8H8z"/><path d="M8 12h8M12 8v8"/></symbol>
+<symbol id="i-photo" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="1.5"/><circle cx="9" cy="10" r="1.5"/><path d="M5 17l4.5-4.5 3 3L17 11l3 3"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+<symbol id="i-clipboard-check" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="1.5"/><path d="M9 4V3h6v1"/><path d="M9.5 13l2 2 3.5-4"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 6 12 6s9.5 6 9.5 6-3.5 6-9.5 6S2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M8 11l4 4 4-4"/><path d="M5 19h14"/></symbol>
+<symbol id="i-timeline" viewBox="0 0 24 24"><path d="M3 12h18"/><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/></symbol>
+<symbol id="i-building-store" viewBox="0 0 24 24"><path d="M4 9l1-4h14l1 4M4 9h16v10H4zM9 19v-5h6v5"/></symbol>
+</defs>
+</svg>
+
+<!-- ============================================================ -->
+<!-- ADMIN PORTAL DASHBOARD -->
+<!-- ============================================================ -->
+<div class="canvas-label"><span>Admin / Team Portal — Dashboard (Desktop · 1360px)</span><div class="line"></div></div>
+<div class="app-frame">
+  <div class="browser-chrome">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <div class="url-pill"><svg class="icn"><use href="#i-lock"/></svg> app.archpro.com/admin/dashboard</div>
+  </div>
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><svg class="icn"><use href="#i-building-castle"/></svg></div>
+        <div class="brand-text">
+          <div class="name">ArchPro</div>
+          <div class="tag">TEAM WORKSPACE</div>
+        </div>
+      </div>
+
+      <div class="nav-section-label">Overview</div>
+      <div class="nav-item active"><svg class="icn"><use href="#i-layout-dashboard"/></svg> Dashboard</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-folder"/></svg> Projects</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-users"/></svg> Team</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-user-circle"/></svg> Clients</div>
+
+      <div class="nav-section-label">Workspace</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-checklist"/></svg> Approvals <span class="nbadge">6</span></div>
+      <div class="nav-item"><svg class="icn"><use href="#i-message-circle-2"/></svg> Messages</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-chart-bar"/></svg> Reports</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-bell"/></svg> Notifications <span class="nbadge">12</span></div>
+
+      <div class="nav-section-label">System</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-settings"/></svg> Settings</div>
+
+      <div class="sidebar-foot">
+        <div class="user-chip">
+          <div class="avatar">PK</div>
+          <div>
+            <div class="uname">Priya Kapoor</div>
+            <div class="urole">Project Manager</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+      <div class="topbar">
+        <div>
+          <div class="page-title">Good morning, Priya</div>
+          <div class="page-sub">Here&rsquo;s what&rsquo;s happening across your projects today</div>
+        </div>
+        <div class="topbar-actions">
+          <div class="search-box"><svg class="icn"><use href="#i-search"/></svg> Search projects, clients&hellip;</div>
+          <div class="icon-btn"><svg class="icn"><use href="#i-bell"/></svg><span class="dot-alert"></span></div>
+          <button class="btn btn-primary"><svg class="icn"><use href="#i-plus"/></svg> New project</button>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <!-- KPI ROW -->
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-label">Active projects</span>
+              <div class="kpi-icon" style="background:var(--navy-light); color:var(--navy);"><svg class="icn"><use href="#i-building-skyscraper"/></svg></div>
+            </div>
+            <div class="kpi-value">24</div>
+            <div class="kpi-delta up"><svg class="icn"><use href="#i-arrow-up-right"/></svg> 3 new this month</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-label">Pending approvals</span>
+              <div class="kpi-icon" style="background:#FEF3E2; color:var(--amber-dark);"><svg class="icn"><use href="#i-clock-hour-4"/></svg></div>
+            </div>
+            <div class="kpi-value">6</div>
+            <div class="kpi-delta warn"><svg class="icn"><use href="#i-alert-triangle"/></svg> 2 overdue</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-label">Upcoming deadlines</span>
+              <div class="kpi-icon" style="background:#FEE2E2; color:#DC2626;"><svg class="icn"><use href="#i-calendar-event"/></svg></div>
+            </div>
+            <div class="kpi-value">9</div>
+            <div class="kpi-delta flat">Next: tomorrow, 5:00 PM</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-label">Completed this year</span>
+              <div class="kpi-icon" style="background:var(--green-light); color:var(--green);"><svg class="icn"><use href="#i-circle-check"/></svg></div>
+            </div>
+            <div class="kpi-value">17</div>
+            <div class="kpi-delta up"><svg class="icn"><use href="#i-arrow-up-right"/></svg> 12% vs last year</div>
+          </div>
+        </div>
+
+        <!-- TWO COLUMN -->
+        <div class="grid-2col">
+          <!-- LEFT COLUMN -->
+          <div>
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Active projects</span>
+                <span class="panel-link">View all projects</span>
+              </div>
+              <div class="panel-body">
+
+                <div class="proj-row">
+                  <div class="proj-thumb" style="background:#EAF0F9;">🏠</div>
+                  <div class="proj-info">
+                    <div class="proj-name">Lakeview Residence — Renovation</div>
+                    <div class="proj-client">Client: Meera Nair</div>
+                  </div>
+                  <span class="badge" style="background:#FFF7E6; color:var(--s-exec);">Execution</span>
+                  <div class="proj-progress-wrap">
+                    <div class="proj-bar-track"><div class="proj-bar-fill" style="width:78%; background:var(--s-exec);"></div></div>
+                    <div class="proj-pct">78% · Stage 7/8</div>
+                  </div>
+                </div>
+
+                <div class="proj-row">
+                  <div class="proj-thumb" style="background:#EFE9FB;">🏢</div>
+                  <div class="proj-info">
+                    <div class="proj-name">Horizon Tower — Commercial Complex</div>
+                    <div class="proj-client">Client: Vantage Developers Pvt Ltd</div>
+                  </div>
+                  <span class="badge" style="background:#F0E7FE; color:var(--s-design);">Design dev.</span>
+                  <div class="proj-progress-wrap">
+                    <div class="proj-bar-track"><div class="proj-bar-fill" style="width:32%; background:var(--s-design);"></div></div>
+                    <div class="proj-pct">32% · Stage 3/8</div>
+                  </div>
+                </div>
+
+                <div class="proj-row">
+                  <div class="proj-thumb" style="background:#FEEEEA;">🏛️</div>
+                  <div class="proj-info">
+                    <div class="proj-name">Sunridge Public Library</div>
+                    <div class="proj-client">Client: City Municipal Council</div>
+                  </div>
+                  <span class="badge" style="background:#FEEAEA; color:var(--s-govt);">Govt approval</span>
+                  <div class="proj-progress-wrap">
+                    <div class="proj-bar-track"><div class="proj-bar-fill" style="width:62%; background:var(--s-govt);"></div></div>
+                    <div class="proj-pct">62% · Stage 6/8</div>
+                  </div>
+                </div>
+
+                <div class="proj-row">
+                  <div class="proj-thumb" style="background:#E7F5EC;">🏘️</div>
+                  <div class="proj-info">
+                    <div class="proj-name">Greenfield Villas — Phase II</div>
+                    <div class="proj-client">Client: Arjun & Kavya Rao</div>
+                  </div>
+                  <span class="badge" style="background:#E3F7EF; color:var(--s-prog);">In progress</span>
+                  <div class="proj-progress-wrap">
+                    <div class="proj-bar-track"><div class="proj-bar-fill" style="width:18%; background:var(--s-prog);"></div></div>
+                    <div class="proj-pct">18% · Stage 2/8</div>
+                  </div>
+                </div>
+
+                <div class="proj-row">
+                  <div class="proj-thumb" style="background:#E6F6FB;">🏗️</div>
+                  <div class="proj-info">
+                    <div class="proj-name">Westbrook Office Park — Block C</div>
+                    <div class="proj-client">Client: NovaSpace Realty</div>
+                  </div>
+                  <span class="badge" style="background:#E5F4FC; color:var(--s-doc);">Documentation</span>
+                  <div class="proj-progress-wrap">
+                    <div class="proj-bar-track"><div class="proj-bar-fill" style="width:51%; background:var(--s-doc);"></div></div>
+                    <div class="proj-pct">51% · Stage 5/8</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- STAGE TRACKER PANEL (signature element) -->
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Lakeview Residence — lifecycle progress</span>
+                <span class="panel-link">Open project</span>
+              </div>
+              <div class="panel-body">
+                <div class="stage-tracker">
+                  <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-new);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Initiation</div></div>
+                  <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-prog);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Site survey</div></div>
+                  <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-design);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Concept design</div></div>
+                  <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-review);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Preliminary design</div></div>
+                  <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-doc);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Detailed design</div></div>
+                  <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-govt);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Approvals</div></div>
+                  <div class="stage-node current"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-exec);">7</div><div class="stage-label">Construction support</div></div>
+                  <div class="stage-node"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--border); color:var(--text3);">8</div><div class="stage-label">Final review</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div>
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Pending approvals</span>
+                <span class="panel-link">View queue</span>
+              </div>
+              <div class="panel-body">
+                <div class="queue-item">
+                  <div class="queue-icon" style="background:#FEEAEA; color:var(--s-govt);"><svg class="icn"><use href="#i-file-text"/></svg></div>
+                  <div class="queue-text">
+                    <div class="queue-title">Structural drawings v3</div>
+                    <div class="queue-meta">Sunridge Library · awaiting client review</div>
+                  </div>
+                  <span class="chip-btn" style="background:#FFF7E6; color:var(--amber-dark); border-color:#FCE3B0;">2d left</span>
+                </div>
+                <div class="queue-item">
+                  <div class="queue-icon" style="background:#EFE9FB; color:var(--s-design);"><svg class="icn"><use href="#i-palette"/></svg></div>
+                  <div class="queue-text">
+                    <div class="queue-title">3 concept options</div>
+                    <div class="queue-meta">Horizon Tower · awaiting client review</div>
+                  </div>
+                  <span class="chip-btn" style="background:#FEEAEA; color:#B91C1C; border-color:#FBCFCF;">Overdue</span>
+                </div>
+                <div class="queue-item">
+                  <div class="queue-icon" style="background:#E5F4FC; color:var(--s-doc);"><svg class="icn"><use href="#i-blueprint"/></svg></div>
+                  <div class="queue-text">
+                    <div class="queue-title">MEP working drawings</div>
+                    <div class="queue-meta">Westbrook Office Park · internal QA</div>
+                  </div>
+                  <span class="chip-btn" style="background:#F1F5F9; color:var(--text2); border-color:var(--border);">5d left</span>
+                </div>
+                <div class="queue-item">
+                  <div class="queue-icon" style="background:#E3F7EF; color:var(--s-prog);"><svg class="icn"><use href="#i-photo"/></svg></div>
+                  <div class="queue-text">
+                    <div class="queue-title">Site survey photo set</div>
+                    <div class="queue-meta">Greenfield Villas · internal QA</div>
+                  </div>
+                  <span class="chip-btn" style="background:#F1F5F9; color:var(--text2); border-color:var(--border);">6d left</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Upcoming deadlines</span>
+                <span class="panel-link">Calendar</span>
+              </div>
+              <div class="panel-body">
+                <div class="deadline-item">
+                  <div class="date-box"><span class="mon">Jun</span><span class="day">20</span></div>
+                  <div class="deadline-text">
+                    <div class="deadline-title">Authority compliance review</div>
+                    <div class="deadline-meta">Sunridge Public Library</div>
+                  </div>
+                </div>
+                <div class="deadline-item">
+                  <div class="date-box"><span class="mon">Jun</span><span class="day">23</span></div>
+                  <div class="deadline-text">
+                    <div class="deadline-title">Quarterly site inspection</div>
+                    <div class="deadline-meta">Lakeview Residence</div>
+                  </div>
+                </div>
+                <div class="deadline-item">
+                  <div class="date-box"><span class="mon">Jun</span><span class="day">27</span></div>
+                  <div class="deadline-text">
+                    <div class="deadline-title">BOQ submission deadline</div>
+                    <div class="deadline-meta">Westbrook Office Park</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Team activity</span>
+              </div>
+              <div class="panel-body">
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--s-design);"></div>
+                  <div>
+                    <div class="activity-text"><b>Arjun Mehta</b> uploaded 3 concept sketches to Horizon Tower</div>
+                    <div class="activity-time">12 minutes ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--s-prog);"></div>
+                  <div>
+                    <div class="activity-text"><b>Sara Iyer</b> completed site survey for Greenfield Villas</div>
+                    <div class="activity-time">1 hour ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:#22C55E;"></div>
+                  <div>
+                    <div class="activity-text"><b>Meera Nair</b> approved Stage 6 documents for Lakeview</div>
+                    <div class="activity-time">3 hours ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-credit">Admin / Team Portal — Dashboard mockup</div>
+
+
+<!-- ============================================================ -->
+<!-- CLIENT PORTAL DASHBOARD -->
+<!-- ============================================================ -->
+<div class="canvas-label"><span>Client Portal — Dashboard (Desktop · 1360px)</span><div class="line"></div></div>
+<div class="app-frame">
+  <div class="browser-chrome">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <div class="url-pill"><svg class="icn"><use href="#i-lock"/></svg> app.archpro.com/client/dashboard</div>
+  </div>
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar client">
+      <div class="brand">
+        <div class="brand-mark"><svg class="icn"><use href="#i-building-castle"/></svg></div>
+        <div class="brand-text">
+          <div class="name">ArchPro</div>
+          <div class="tag">CLIENT PORTAL</div>
+        </div>
+      </div>
+
+      <div class="nav-section-label">My projects</div>
+      <div class="nav-item active"><svg class="icn"><use href="#i-layout-dashboard"/></svg> Dashboard</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-folder"/></svg> Projects</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-timeline"/></svg> Timeline</div>
+
+      <div class="nav-section-label">Workspace</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-checklist"/></svg> Review & approvals <span class="nbadge">2</span></div>
+      <div class="nav-item"><svg class="icn"><use href="#i-folders"/></svg> Document centre</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-message-circle-2"/></svg> Messages</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-bell"/></svg> Notifications <span class="nbadge">4</span></div>
+
+      <div class="nav-section-label">Account</div>
+      <div class="nav-item"><svg class="icn"><use href="#i-user-circle"/></svg> Profile</div>
+
+      <div class="sidebar-foot">
+        <div class="user-chip">
+          <div class="avatar">MN</div>
+          <div>
+            <div class="uname">Meera Nair</div>
+            <div class="urole">Client</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+      <div class="topbar">
+        <div>
+          <div class="page-title">Welcome back, Meera</div>
+          <div class="page-sub">Lakeview Residence is in Construction support</div>
+        </div>
+        <div class="topbar-actions">
+          <div class="icon-btn"><svg class="icn"><use href="#i-bell"/></svg><span class="dot-alert"></span></div>
+          <div class="icon-btn"><svg class="icn"><use href="#i-message-circle-2"/></svg></div>
+          <button class="btn btn-primary client"><svg class="icn"><use href="#i-eye"/></svg> View drawings</button>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <!-- PROGRESS HERO -->
+        <div class="progress-hero">
+          <div class="hero-top">
+            <div>
+              <div class="hero-eyebrow">Lakeview Residence — Renovation</div>
+              <div class="hero-name">Project overview</div>
+            </div>
+            <span class="hero-stage-badge">Stage 7 of 8 · Construction support</span>
+          </div>
+          <div class="hero-progress-row">
+            <span class="hero-pct">78%</span>
+            <span class="hero-pct-label">complete · on track for Aug 14 handover</span>
+          </div>
+          <div class="hero-bar-track"><div class="hero-bar-fill" style="width:78%;"></div></div>
+        </div>
+
+        <!-- STAGE TRACKER -->
+        <div class="panel">
+          <div class="panel-head">
+            <span class="panel-title">Project timeline</span>
+            <span class="panel-link client">View full timeline</span>
+          </div>
+          <div class="panel-body">
+            <div class="stage-tracker">
+              <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-new);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Initiation</div></div>
+              <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-prog);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Site survey</div></div>
+              <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-design);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Concept design</div></div>
+              <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-review);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Preliminary design</div></div>
+              <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-doc);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Detailed design</div></div>
+              <div class="stage-node done"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-govt);"><svg class="icn" style="font-size:15px;"><use href="#i-check"/></svg></div><div class="stage-label">Approvals</div></div>
+              <div class="stage-node current"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--s-exec);">7</div><div class="stage-label">Construction support</div></div>
+              <div class="stage-node"><div class="stage-connector"></div><div class="stage-circle" style="background:var(--border); color:var(--text3);">8</div><div class="stage-label">Final review</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2col">
+          <!-- LEFT -->
+          <div>
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Needs your review</span>
+                <span class="panel-link client">View all</span>
+              </div>
+              <div class="panel-body">
+                <div class="queue-item">
+                  <div class="queue-icon" style="background:#FEF3E2; color:var(--amber-dark);"><svg class="icn"><use href="#i-clipboard-check"/></svg></div>
+                  <div class="queue-text">
+                    <div class="queue-title">Site progress report — Week 18</div>
+                    <div class="queue-meta">Uploaded by Arjun Mehta · 2 days ago</div>
+                  </div>
+                  <span class="chip-btn" style="background:var(--green); color:#fff; border-color:var(--green);">Review</span>
+                </div>
+                <div class="queue-item">
+                  <div class="queue-icon" style="background:#E5F4FC; color:var(--s-doc);"><svg class="icn"><use href="#i-photo"/></svg></div>
+                  <div class="queue-text">
+                    <div class="queue-title">Interior finish samples</div>
+                    <div class="queue-meta">Uploaded by Sara Iyer · 4 days ago</div>
+                  </div>
+                  <span class="chip-btn" style="background:var(--green); color:#fff; border-color:var(--green);">Review</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Recent documents</span>
+                <span class="panel-link client">Document centre</span>
+              </div>
+              <div class="panel-body">
+                <div class="doc-row">
+                  <div class="doc-icon"><svg class="icn"><use href="#i-file-text"/></svg></div>
+                  <div style="flex:1;">
+                    <div class="doc-name">Quality check report — Foundation</div>
+                    <div class="doc-meta">PDF · 2.4 MB · Jun 16, 2026</div>
+                  </div>
+                  <div class="doc-actions"><svg class="icn"><use href="#i-eye"/></svg><svg class="icn"><use href="#i-download"/></svg></div>
+                </div>
+                <div class="doc-row">
+                  <div class="doc-icon"><svg class="icn"><use href="#i-photo"/></svg></div>
+                  <div style="flex:1;">
+                    <div class="doc-name">Site photos — June batch (24)</div>
+                    <div class="doc-meta">ZIP · 48 MB · Jun 14, 2026</div>
+                  </div>
+                  <div class="doc-actions"><svg class="icn"><use href="#i-eye"/></svg><svg class="icn"><use href="#i-download"/></svg></div>
+                </div>
+                <div class="doc-row">
+                  <div class="doc-icon"><svg class="icn"><use href="#i-blueprint"/></svg></div>
+                  <div style="flex:1;">
+                    <div class="doc-name">Approved structural drawings v2</div>
+                    <div class="doc-meta">PDF · 6.1 MB · Jun 02, 2026</div>
+                  </div>
+                  <div class="doc-actions"><svg class="icn"><use href="#i-eye"/></svg><svg class="icn"><use href="#i-download"/></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div>
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Recent updates</span>
+              </div>
+              <div class="panel-body">
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--s-exec);"></div>
+                  <div>
+                    <div class="activity-text">Quality check completed for <b>foundation work</b></div>
+                    <div class="activity-time">Today, 9:40 AM</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--s-exec);"></div>
+                  <div>
+                    <div class="activity-text">New site progress report uploaded</div>
+                    <div class="activity-time">2 days ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:#22C55E;"></div>
+                  <div>
+                    <div class="activity-text">You approved Stage 6 — Approval & permissions</div>
+                    <div class="activity-time">Jun 09, 2026</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Project team</span>
+              </div>
+              <div class="panel-body">
+                <div class="proj-row" style="padding:8px 0;">
+                  <div class="avatar" style="background:var(--green-light); color:var(--green);">AM</div>
+                  <div class="proj-info">
+                    <div class="proj-name" style="font-size:13px;">Arjun Mehta</div>
+                    <div class="proj-client">Lead Architect</div>
+                  </div>
+                </div>
+                <div class="proj-row" style="padding:8px 0;">
+                  <div class="avatar" style="background:var(--green-light); color:var(--green);">SI</div>
+                  <div class="proj-info">
+                    <div class="proj-name" style="font-size:13px;">Sara Iyer</div>
+                    <div class="proj-client">Site Engineer</div>
+                  </div>
+                </div>
+                <div class="proj-row" style="padding:8px 0;">
+                  <div class="avatar" style="background:var(--green-light); color:var(--green);">PK</div>
+                  <div class="proj-info">
+                    <div class="proj-name" style="font-size:13px;">Priya Kapoor</div>
+                    <div class="proj-client">Project Manager</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-credit">Client Portal — Dashboard mockup</div>
+
+</body>
+</html>

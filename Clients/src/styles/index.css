@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* ============================================================
+   Map our CSS-variable tokens into Tailwind's theme so utility
+   classes like bg-navy, text-stage-3, rounded-lg, shadow-card
+   are generated from tokens.css. Edit tokens.css only — these
+   stay in sync automatically since they reference the same vars.
+   ============================================================ */
+@theme {
+  --color-navy: var(--color-navy);
+  --color-navy-dark: var(--color-navy-dark);
+  --color-navy-light: var(--color-navy-light);
+  --color-navy-on-tint: var(--color-navy-on-tint);
+  --color-green: var(--color-green);
+  --color-green-dark: var(--color-green-dark);
+  --color-green-light: var(--color-green-light);
+  --color-green-on-tint: var(--color-green-on-tint);
+  --color-amber: var(--color-amber);
+  --color-amber-dark: var(--color-amber-dark);
+  --color-amber-light: var(--color-amber-light);
+
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-tertiary: var(--color-text-tertiary);
+  --color-text-inverse: var(--color-text-inverse);
+
+  --color-success: var(--color-success);
+  --color-success-bg: var(--color-success-bg);
+  --color-warning: var(--color-warning);
+  --color-warning-bg: var(--color-warning-bg);
+  --color-danger: var(--color-danger);
+  --color-danger-bg: var(--color-danger-bg);
+  --color-info: var(--color-info);
+  --color-info-bg: var(--color-info-bg);
+
+  --color-stage-1: var(--color-stage-1);
+  --color-stage-2: var(--color-stage-2);
+  --color-stage-3: var(--color-stage-3);
+  --color-stage-4: var(--color-stage-4);
+  --color-stage-5: var(--color-stage-5);
+  --color-stage-6: var(--color-stage-6);
+  --color-stage-7: var(--color-stage-7);
+  --color-stage-8: var(--color-stage-8);
+
+  --color-portal-primary: var(--color-portal-primary);
+  --color-portal-primary-dark: var(--color-portal-primary-dark);
+  --color-portal-primary-light: var(--color-portal-primary-light);
+  --color-portal-primary-on-tint: var(--color-portal-primary-on-tint);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-pill: var(--radius-pill);
+
+  --shadow-card: var(--shadow-sm);
+  --shadow-card-md: var(--shadow-md);
+  --shadow-card-lg: var(--shadow-lg);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--color-border-strong); border-radius: 99px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+}
+
+@layer components {
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: var(--radius-sm);
+    transition: filter 0.12s ease, background-color 0.12s ease;
+  }
+  .btn-primary {
+    background: var(--color-portal-primary);
+    color: var(--color-text-inverse);
+  }
+  .btn-primary:hover { filter: brightness(0.92); }
+  .btn-secondary {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text-primary);
+  }
+  .btn-secondary:hover { background: var(--color-bg); }
+  .btn-danger {
+    background: var(--color-danger);
+    color: var(--color-text-inverse);
+  }
+  .icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    position: relative;
+  }
+  .input-field {
+    width: 100%;
+    font-size: 13.5px;
+    padding: 9px 12px;
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+  }
+  .input-field:focus {
+    outline: none;
+    border-color: var(--color-portal-primary);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-portal-primary) 15%, transparent);
+  }
+}
