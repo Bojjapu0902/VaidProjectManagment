@@ -23,6 +23,20 @@ const PROJECT_TYPES = [
 
 const NEW_CLIENT_VALUE = "__new_client__";
 
+const MAX_DATE = "9999-12-31";
+
+// Rejects malformed/rolled-over dates (e.g. 2026-02-30, which JS's Date
+// constructor would otherwise silently normalize to March 2).
+const isValidCalendarDate = (value) => {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [y, m, d] = value.split("-").map(Number);
+  if (m < 1 || m > 12) return false;
+  const date = new Date(y, m - 1, d);
+  return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d;
+};
+
+const todayStr = () => new Date().toISOString().slice(0, 10);
+
 const PROJECT_ROLE_OPTIONS = [
   { value: "Lead Architect", label: "Lead Architect" },
   { value: "Architect", label: "Architect" },
@@ -32,9 +46,17 @@ const PROJECT_ROLE_OPTIONS = [
   { value: "Engineer", label: "Engineer" },
 ];
 
-const ACCOUNT_ROLE_OPTIONS = Object.values(ROLES)
-  .filter((r) => r !== ROLES.CLIENT)
-  .map((r) => ({ value: r, label: ROLE_LABELS[r] }));
+// The account-role select was removed from the "add new member" form — the
+// account role a new hire's User record gets is now inferred from the
+// project role picked for them here.
+const PROJECT_ROLE_TO_ACCOUNT_ROLE = {
+  "Lead Architect": ROLES.ARCHITECT,
+  Architect: ROLES.ARCHITECT,
+  Designer: ROLES.DESIGNER,
+  "Principal Designer": ROLES.PRINCIPAL_DESIGNER,
+  "Project Manager": ROLES.PROJECT_MANAGER,
+  Engineer: ROLES.ENGINEER,
+};
 
 export default function CreateProjectPage() {
   const navigate = useNavigate();
@@ -92,7 +114,6 @@ export default function CreateProjectPage() {
     name: "",
     email: "",
     phone: "",
-    accountRole: ACCOUNT_ROLE_OPTIONS[0].value,
     projectRole: PROJECT_ROLE_OPTIONS[0].value,
   });
   const [newMemberError, setNewMemberError] = useState("");
@@ -124,7 +145,6 @@ export default function CreateProjectPage() {
         name: newMember.name.trim(),
         email: newMember.email.trim(),
         phone: newMember.phone.trim(),
-        accountRole: newMember.accountRole,
         role: newMember.projectRole,
         isNew: true,
       },
@@ -133,7 +153,6 @@ export default function CreateProjectPage() {
       name: "",
       email: "",
       phone: "",
-      accountRole: ACCOUNT_ROLE_OPTIONS[0].value,
       projectRole: PROJECT_ROLE_OPTIONS[0].value,
     });
     setNewMemberError("");
@@ -144,13 +163,16 @@ export default function CreateProjectPage() {
     setTeamMembers((prev) => prev.filter((m) => m.id !== memberId));
 
   const addStage = () =>
-    setStages((prev) => [...prev, { id: uid(), name: "", substages: [] }]);
+    setStages((prev) => [...prev, { id: uid(), name: "", timeline: "", substages: [] }]);
 
   const removeStage = (stageId) =>
     setStages((prev) => prev.filter((s) => s.id !== stageId));
 
   const updateStageName = (stageId, name) =>
     setStages((prev) => prev.map((s) => (s.id === stageId ? { ...s, name } : s)));
+
+  const updateStageTimeline = (stageId, timeline) =>
+    setStages((prev) => prev.map((s) => (s.id === stageId ? { ...s, timeline } : s)));
 
   const addSubstage = (stageId) =>
     setStages((prev) =>
@@ -202,7 +224,7 @@ export default function CreateProjectPage() {
             name: member.name,
             email: member.email,
             phone: member.phone,
-            role: member.accountRole,
+            role: PROJECT_ROLE_TO_ACCOUNT_ROLE[member.role] || ROLES.ENGINEER,
             password: "changeme123",
           }).unwrap();
           team.push({ userId: created?.id, name: created?.name, role: member.role });
@@ -221,8 +243,9 @@ export default function CreateProjectPage() {
         budget: { min: Number(values.budgetMin), max: Number(values.budgetMax), currency: "INR" },
         timeline: { startDate: values.startDate, expectedEndDate: values.expectedEndDate },
         team,
-        lifecycle: stages.map(({ name, substages }) => ({
+        lifecycle: stages.map(({ name, timeline, substages }) => ({
           name,
+          timeline,
           substages: substages.map(({ name: subName }) => ({ name: subName })),
         })),
       }).unwrap();
@@ -287,7 +310,12 @@ export default function CreateProjectPage() {
                 {...register("title", { required: "Project title is required" })}
               />
               <Select label="Project type" options={PROJECT_TYPES} {...register("type")} />
-              <Input label="Location" placeholder="City, area" {...register("location")} />
+              <Input
+                label="Location"
+                placeholder="City, area"
+                error={errors.location?.message}
+                {...register("location", { required: "Location is required" })}
+              />
               <Textarea
                 label="Description"
                 placeholder="Brief project scope and context…"
@@ -300,10 +328,65 @@ export default function CreateProjectPage() {
           <Card padded={false}>
             <CardHeader title="Budget & timeline" />
             <CardBody className="grid grid-cols-2 gap-4">
-              <Input label="Budget — minimum (₹)" type="number" placeholder="4500000" {...register("budgetMin")} />
-              <Input label="Budget — maximum (₹)" type="number" placeholder="5200000" {...register("budgetMax")} />
-              <Input label="Start date" type="date" {...register("startDate")} />
-              <Input label="Expected completion" type="date" {...register("expectedEndDate")} />
+              <Input
+                label="Budget — minimum (₹)"
+                type="number"
+                min="0"
+                placeholder="4500000"
+                error={errors.budgetMin?.message}
+                {...register("budgetMin", {
+                  required: "Minimum budget is required",
+                  min: { value: 1, message: "Minimum budget must be greater than 0" },
+                })}
+              />
+              <Input
+                label="Budget — maximum (₹)"
+                type="number"
+                min="0"
+                placeholder="5200000"
+                error={errors.budgetMax?.message}
+                {...register("budgetMax", {
+                  required: "Maximum budget is required",
+                  validate: (v) => {
+                    const min = Number(watch("budgetMin"));
+                    if (Number(v) < min) return "Maximum budget must be greater than or equal to the minimum budget";
+                    return true;
+                  },
+                })}
+              />
+              <Input
+                label="Start date"
+                type="date"
+                max={MAX_DATE}
+                error={errors.startDate?.message}
+                {...register("startDate", {
+                  required: "Start date is required",
+                  validate: (v) => {
+                    if (!isValidCalendarDate(v)) return "Enter a valid date";
+                    if (v < todayStr()) return "Start date cannot be earlier than today";
+                    return true;
+                  },
+                })}
+              />
+              <Input
+                label="Expected completion"
+                type="date"
+                max={MAX_DATE}
+                error={errors.expectedEndDate?.message}
+                {...register("expectedEndDate", {
+                  required: "Expected completion date is required",
+                  validate: (v) => {
+                    if (!isValidCalendarDate(v)) return "Enter a valid date";
+                    if (v < todayStr()) return "Completion date cannot be earlier than today";
+                    const start = watch("startDate");
+                    if (start && isValidCalendarDate(start)) {
+                      if (v === start) return "Completion date must be different from the start date";
+                      if (v < start) return "Completion date must be after the start date";
+                    }
+                    return true;
+                  },
+                })}
+              />
             </CardBody>
           </Card>
 
@@ -408,12 +491,6 @@ export default function CreateProjectPage() {
                       onChange={(e) => setNewMember((m) => ({ ...m, phone: e.target.value }))}
                     />
                     <Select
-                      label="Account role"
-                      value={newMember.accountRole}
-                      onChange={(e) => setNewMember((m) => ({ ...m, accountRole: e.target.value }))}
-                      options={ACCOUNT_ROLE_OPTIONS}
-                    />
-                    <Select
                       label="Project role"
                       value={newMember.projectRole}
                       onChange={(e) => setNewMember((m) => ({ ...m, projectRole: e.target.value }))}
@@ -481,6 +558,13 @@ export default function CreateProjectPage() {
                           onChange={(e) => updateStageName(stage.id, e.target.value)}
                           placeholder="Stage name…"
                           className="flex-1 text-sm font-semibold text-(--color-text-primary) bg-transparent outline-none placeholder:text-(--color-text-tertiary)"
+                        />
+                        <input
+                          type="text"
+                          value={stage.timeline}
+                          onChange={(e) => updateStageTimeline(stage.id, e.target.value)}
+                          placeholder="Timeline (e.g. 2 weeks)…"
+                          className="w-44 shrink-0 text-xs text-(--color-text-secondary) bg-transparent outline-none placeholder:text-(--color-text-tertiary) border-l border-(--color-border) pl-3"
                         />
                         <button
                           type="button"

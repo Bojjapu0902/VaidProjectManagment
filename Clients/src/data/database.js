@@ -113,3 +113,10 @@ export const addMockProject = (project) => {
   MOCK_PROJECTS.push(project);
   return project;
 };
+
+export const removeMockProject = (id) => {
+  const idx = MOCK_PROJECTS.findIndex((p) => p.id === id);
+  if (idx === -1) return false;
+  MOCK_PROJECTS.splice(idx, 1);
+  return true;
+};

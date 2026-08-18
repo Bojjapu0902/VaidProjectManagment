@@ -39,6 +39,7 @@ const substageSchema = new mongoose.Schema(
 const lifecycleStageSchema = new mongoose.Schema(
   {
     name: { type: String, required: true, trim: true },
+    timeline: { type: String, trim: true },
     substages: { type: [substageSchema], default: [] },
   },
   { _id: false }

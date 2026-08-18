@@ -56,6 +56,18 @@ export const apiSlice = createApi({
       invalidatesTags: [{ type: "Project", id: "LIST" }],
     }),
 
+    deleteProject: builder.mutation({
+      async queryFn(id) {
+        try {
+          const { data } = await projectService.deleteProject(id);
+          return { data };
+        } catch (error) {
+          return { error: error.response?.data || { message: error.message } };
+        }
+      },
+      invalidatesTags: (result, error, id) => [{ type: "Project", id }, { type: "Project", id: "LIST" }],
+    }),
+
     updateStage: builder.mutation({
       async queryFn({ projectId, stageNumber, payload }) {
         try {
@@ -348,6 +360,7 @@ export const {
   useGetProjectsQuery,
   useGetProjectByIdQuery,
   useCreateProjectMutation,
+  useDeleteProjectMutation,
   useUpdateStageMutation,
   useAssignTeamMemberMutation,
   useRemoveTeamMemberMutation,

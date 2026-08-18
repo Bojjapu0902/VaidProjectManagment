@@ -88,6 +88,18 @@ export const STAGES = [
 export const getStageByNumber = (number) =>
   STAGES.find((s) => s.number === number) || STAGES[0];
 
+// Builds a StageTracker-compatible stage list from a project's custom
+// `lifecycle` (the stages/substages defined on the Create Project form).
+// Falls back to the standard 8-stage lifecycle when the project has none.
+export const getProjectLifecycleStages = (project) =>
+  project?.lifecycle?.length
+    ? project.lifecycle.map((stage, idx) => ({
+        number: idx + 1,
+        shortName: stage.name || `Stage ${idx + 1}`,
+        color: STAGES[idx % STAGES.length].color,
+      }))
+    : STAGES;
+
 export const STATUS_BADGE_STYLES = {
   1: { bg: "#E6F1FB", text: "#185FA5" },
   2: { bg: "#E3F7EF", text: "#0F6E56" },

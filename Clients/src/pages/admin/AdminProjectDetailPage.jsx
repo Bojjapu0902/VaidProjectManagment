@@ -13,7 +13,7 @@ import {
   useGetDocumentsByProjectQuery,
   useGetApprovalsQuery,
 } from "../../app/api/apiSlice";
-import { getStageByNumber } from "../../constants/stages";
+import { getStageByNumber, getProjectLifecycleStages } from "../../constants/stages";
 import { formatCurrency, formatDate } from "../../utils/format";
 import { ROUTES } from "../../constants/routes";
 
@@ -34,6 +34,7 @@ export default function AdminProjectDetailPage() {
   }
 
   const stage = getStageByNumber(project.currentStage);
+  const lifecycleStages = getProjectLifecycleStages(project);
 
   const quickLinks = [
     { label: "Stage management", icon: "timeline", to: ROUTES.ADMIN.PROJECT_STAGES(id) },
@@ -95,45 +96,10 @@ export default function AdminProjectDetailPage() {
         <Card padded={false} className="mb-5">
           <CardHeader
             title="Lifecycle progress"
-            subtitle={
-              project.lifecycle?.length
-                ? `${project.lifecycle.length} stage${project.lifecycle.length !== 1 ? "s" : ""} defined`
-                : `Stage ${project.currentStage} of 8`
-            }
+            subtitle={`Stage ${project.currentStage} of ${lifecycleStages.length}`}
           />
           <CardBody>
-            {project.lifecycle?.length > 0 ? (
-              <div className="space-y-2">
-                {project.lifecycle.map((stage, si) => (
-                  <div key={si}>
-                    <div className="flex items-center gap-3 py-2">
-                      <div className="w-7 h-7 rounded-full bg-(--color-portal-primary-light) text-(--color-portal-primary-on-tint) flex items-center justify-center text-xs font-bold flex-shrink-0">
-                        {si + 1}
-                      </div>
-                      <span className="text-sm font-semibold text-(--color-text-primary)">
-                        {stage.name || `Stage ${si + 1}`}
-                      </span>
-                    </div>
-                    {stage.substages?.length > 0 && (
-                      <div className="ml-10 border-l-2 border-(--color-border) pl-3 pb-1 space-y-1">
-                        {stage.substages.map((sub, subIdx) => (
-                          <div key={subIdx} className="flex items-center gap-2 py-1">
-                            <span className="text-[11px] text-(--color-text-tertiary) w-6 shrink-0">
-                              {si + 1}.{subIdx + 1}
-                            </span>
-                            <span className="text-xs text-(--color-text-secondary)">
-                              {sub.name || `Substage ${subIdx + 1}`}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <StageTracker currentStage={project.currentStage} />
-            )}
+            <StageTracker currentStage={project.currentStage} stages={lifecycleStages} />
           </CardBody>
         </Card>
 

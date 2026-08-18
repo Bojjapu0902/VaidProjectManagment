@@ -3,18 +3,21 @@ import Icon from "./Icon";
 import clsx from "clsx";
 
 /**
- * Visual 8-stage lifecycle tracker. Reused on:
+ * Visual lifecycle tracker. Reused on:
  *  - Admin Project Detail / Stage Management
  *  - Client Project Overview / Timeline
  *
- * currentStage: 1-8, the stage currently in progress.
+ * currentStage: 1-based, the stage currently in progress.
  * orientation: 'horizontal' (desktop) | 'vertical' (mobile / sidebar use)
+ * stages: optional override list ({ number, shortName, color }[]) — defaults
+ *   to the standard 8-stage lifecycle. Pass a project's custom `lifecycle`
+ *   (mapped to this shape) to reflect the stages defined at project creation.
  */
-export default function StageTracker({ currentStage = 1, orientation = "horizontal" }) {
+export default function StageTracker({ currentStage = 1, orientation = "horizontal", stages = STAGES }) {
   if (orientation === "vertical") {
     return (
       <div className="flex flex-col">
-        {STAGES.map((stage, idx) => {
+        {stages.map((stage, idx) => {
           const isDone = stage.number < currentStage;
           const isCurrent = stage.number === currentStage;
           return (
@@ -26,7 +29,7 @@ export default function StageTracker({ currentStage = 1, orientation = "horizont
                 >
                   {isDone ? <Icon name="check" size={14} /> : stage.number}
                 </div>
-                {idx < STAGES.length - 1 && (
+                {idx < stages.length - 1 && (
                   <div
                     className="w-0.5 flex-1 my-1"
                     style={{ background: isDone ? "#22C55E" : "var(--color-border)", minHeight: 24 }}
@@ -48,7 +51,7 @@ export default function StageTracker({ currentStage = 1, orientation = "horizont
 
   return (
     <div className="flex items-start gap-0 overflow-x-auto pb-1.5">
-      {STAGES.map((stage, idx) => {
+      {stages.map((stage, idx) => {
         const isDone = stage.number < currentStage;
         const isCurrent = stage.number === currentStage;
         return (

@@ -7,19 +7,36 @@ import { Card } from "../../components/common/Card";
 import { StageBadge } from "../../components/common/Badge";
 import ProgressBar from "../../components/common/ProgressBar";
 import Table from "../../components/common/Table";
+import Modal from "../../components/common/Modal";
 import { PageLoader } from "../../components/common/EmptyState";
 import { EmptyState } from "../../components/common/EmptyState";
 import useAuth from "../../hooks/useAuth";
-import { useGetProjectsQuery } from "../../app/api/apiSlice";
+import { useAppDispatch } from "../../app/hooks";
+import { pushToast } from "../../app/uiSlice";
+import { useGetProjectsQuery, useDeleteProjectMutation } from "../../app/api/apiSlice";
 import { getStageByNumber } from "../../constants/stages";
 import { ROUTES } from "../../constants/routes";
 
 export default function AdminProjectListPage() {
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
   const { user } = useAuth();
   const { data: projects = [], isLoading } = useGetProjectsQuery({ role: user?.role, userId: user?.id });
+  const [deleteProject, { isLoading: isDeleting }] = useDeleteProjectMutation();
   const [search, setSearch] = useState("");
   const [stageFilter, setStageFilter] = useState("all");
+  const [projectToDelete, setProjectToDelete] = useState(null);
+
+  const confirmDelete = async () => {
+    if (!projectToDelete) return;
+    try {
+      await deleteProject(projectToDelete.id).unwrap();
+      dispatch(pushToast(`${projectToDelete.title} was deleted`, "success"));
+      setProjectToDelete(null);
+    } catch (err) {
+      dispatch(pushToast(err.message || "Could not delete project", "danger"));
+    }
+  };
 
   const filtered = useMemo(() => {
     return projects.filter((p) => {
@@ -59,6 +76,36 @@ export default function AdminProjectListPage() {
       render: (row) => (
         <div className="w-[120px]">
           <ProgressBar percent={row.progressPercent} color={getStageByNumber(row.currentStage).color} />
+        </div>
+      ),
+    },
+    {
+      key: "actions",
+      header: "Actions",
+      render: (row) => (
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            className="icon-btn"
+            aria-label={`View ${row.title}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              navigate(ROUTES.ADMIN.PROJECT_DETAIL(row.id));
+            }}
+          >
+            <Icon name="eye" size={16} />
+          </button>
+          <button
+            type="button"
+            className="icon-btn hover:text-(--color-danger)"
+            aria-label={`Delete ${row.title}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              setProjectToDelete(row);
+            }}
+          >
+            <Icon name="trash" size={16} />
+          </button>
         </div>
       ),
     },
@@ -116,6 +163,27 @@ export default function AdminProjectListPage() {
           )}
         </Card>
       </div>
+
+      <Modal
+        isOpen={!!projectToDelete}
+        onClose={() => setProjectToDelete(null)}
+        title="Delete project"
+        footer={
+          <>
+            <Button variant="secondary" onClick={() => setProjectToDelete(null)}>
+              Cancel
+            </Button>
+            <Button variant="danger" onClick={confirmDelete} disabled={isDeleting}>
+              {isDeleting ? "Deleting…" : "Delete"}
+            </Button>
+          </>
+        }
+      >
+        <p className="text-sm text-(--color-text-secondary)">
+          Are you sure you want to delete <strong>{projectToDelete?.title}</strong>? This archives the
+          project — it will no longer appear in active project lists.
+        </p>
+      </Modal>
     </>
   );
 }

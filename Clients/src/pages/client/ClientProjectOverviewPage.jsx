@@ -6,6 +6,7 @@ import ProgressHero from "../../components/client/ProgressHero";
 import Icon from "../../components/common/Icon";
 import { PageLoader } from "../../components/common/EmptyState";
 import { useGetProjectByIdQuery } from "../../app/api/apiSlice";
+import { getProjectLifecycleStages } from "../../constants/stages";
 import { ROUTES } from "../../constants/routes";
 
 export default function ClientProjectOverviewPage() {
@@ -21,6 +22,8 @@ export default function ClientProjectOverviewPage() {
       </>
     );
   }
+
+  const lifecycleStages = getProjectLifecycleStages(project);
 
   const quickLinks = [
     { label: "Timeline", icon: "timeline", to: ROUTES.CLIENT.PROJECT_TIMELINE(id) },
@@ -58,9 +61,12 @@ export default function ClientProjectOverviewPage() {
         </div>
 
         <Card padded={false}>
-          <CardHeader title="Lifecycle progress" subtitle={`Stage ${project.currentStage} of 8`} />
+          <CardHeader
+            title="Lifecycle progress"
+            subtitle={`Stage ${project.currentStage} of ${lifecycleStages.length}`}
+          />
           <CardBody>
-            <StageTracker currentStage={project.currentStage} />
+            <StageTracker currentStage={project.currentStage} stages={lifecycleStages} />
           </CardBody>
         </Card>
       </div>

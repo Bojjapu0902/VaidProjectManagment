@@ -1,6 +1,6 @@
 import axiosInstance, { USE_MOCKS } from "./axiosInstance";
 import { mockResolve, mockReject } from "./mockAdapter";
-import { MOCK_PROJECTS, getProjectsByClient, getProjectById, addMockProject } from "../data/database";
+import { MOCK_PROJECTS, getProjectsByClient, getProjectById, addMockProject, removeMockProject } from "../data/database";
 import { withId, withIds } from "./normalize";
 import { ROLES } from "../constants/roles";
 
@@ -51,6 +51,15 @@ export const projectService = {
       return mockResolve(newProject);
     }
     const { data } = await axiosInstance.post("/projects", payload);
+    return { data: withId(data) };
+  },
+
+  async deleteProject(id) {
+    if (USE_MOCKS) {
+      removeMockProject(id);
+      return mockResolve({ id });
+    }
+    const { data } = await axiosInstance.delete(`/projects/${id}`);
     return { data: withId(data) };
   },
 
