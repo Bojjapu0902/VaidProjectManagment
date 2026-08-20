@@ -1,0 +1,553 @@
+{
+    "architecture": [
+        {
+            "title": "APARTMENTS",
+            "number": "01",
+            "img": "images/projects/archtechure/apartments/BDA/apartment_architecture_BDA.webp",
+            "link": "pages/architecture/apartments.html",
+            "visible": true
+        },
+        {
+            "title": "COMMERCIAL",
+            "number": "02",
+            "img": "images/projects/archtechure/commercial/Anand/apartment_commercial_Anand.webp",
+            "link": "pages/architecture/commercial.html",
+            "visible": true
+        },
+        {
+            "title": "FARM HOUSE",
+            "number": "03",
+            "img": "images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava.webp",
+            "link": "pages/architecture/farm-house.html",
+            "visible": true
+        },
+        {
+            "title": "GATED COMMUNITY",
+            "number": "04",
+            "img": "images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu.webp",
+            "link": "pages/architecture/gated-community.html",
+            "visible": true
+        },
+        {
+            "title": "HOSPITAL",
+            "number": "05",
+            "img": "images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om.webp",
+            "link": "pages/architecture/hospital.html",
+            "visible": true
+        },
+        {
+            "title": "INDUSTRIAL",
+            "number": "06",
+            "img": "images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury.webp",
+            "link": "pages/architecture/industrial.html",
+            "visible": true
+        },
+        {
+            "title": "INSTITUTION",
+            "number": "07",
+            "img": "images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru.webp",
+            "link": "pages/architecture/institution.html",
+            "visible": true
+        },
+        {
+            "title": "RESTAURANT",
+            "number": "08",
+            "img": "images/projects/archtechure/restaurant/Runway-9/wm/Archtechure_RESTAURANT_RUNWAY09_1.webp",
+            "link": "pages/architecture/restaurant.html",
+            "visible": true
+        },
+        {
+            "title": "SPORTS",
+            "number": "09",
+            "img": "images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_01.webp",
+            "link": "pages/architecture/sports.html",
+            "visible": true
+        }
+    ],
+    "apartments": [
+        {
+            "id": "bda-apartments",
+            "title": "BDA Apartments, Bangalore",
+            "location": "Anekal & Lingapura",
+            "siteArea": "50 Acres",
+            "Type": "High Rise Apartments",
+            "img": "../../images/projects/archtechure/apartments/BDA/apartment_architecture_BDA.webp",
+            "description": "The BDA High-Rise Apartment Development at Anekal & Lingapura, Bangalore, is a landmark 50-acre residential township thoughtfully designed by VAID Architects. This large-scale high-rise apartment project reflects a perfect balance of modern architecture, sustainable master planning, and community-focused urban living. The development features efficient space planning, landscaped open spaces, pedestrian-friendly environments, and contemporary residential design that enhances comfort, functionality, and long-term value. Planned to meet the evolving needs of modern families, the project integrates smart infrastructure, green spaces, and well-connected community amenities, creating a vibrant and sustainable living environment in one of Bangalore's rapidly growing residential corridors.",
+            "gallery": [
+                "../../images/projects/archtechure/apartments/BDA/apartment_architecture_BDA.webp",
+                "../../images/projects/archtechure/apartments/BDA/apartment_architecture_BDA_1.webp",
+                "../../images/projects/archtechure/apartments/BDA/apartment_architecture_BDA_2.webp",
+                "../../images/projects/archtechure/apartments/BDA/apartment_architecture_BDA_3.webp",
+                "../../images/projects/archtechure/apartments/BDA/apartment_architecture_BDA_4.webp",
+                "../../images/projects/archtechure/apartments/BDA/apartment_architecture_BDA_5.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Epitome",
+            "title": "Epitome",
+            "location": "Nandhyal",
+            "siteArea": "2000 SQ.M",
+            "Type": "Apartments",
+            "img": "../../images/projects/archtechure/apartments/NANDYAL/apartment_architecture_Nandyal.webp",
+            "description": "Located in Nandyal, this 2,000 sq.m apartment development by VAID Architects is thoughtfully designed to deliver a modern, functional, and sustainable residential environment. The project emphasizes contemporary apartment architecture, efficient space planning, and optimized land utilization to create comfortable, well-ventilated living spaces. With carefully planned layouts, ample natural light, landscaped surroundings, and community-focused amenities, the development offers a balanced urban lifestyle while reflecting high standards of residential design, quality, and long-term value. It showcases VAID Architects' expertise in creating modern apartment projects, residential architecture, and sustainable housing developments that meet the evolving needs of today's homeowners.",
+            "gallery": [
+                "../../images/projects/archtechure/apartments/NANDYAL/apartment_architecture_Nandyal.webp",
+                "../../images/projects/archtechure/apartments/NANDYAL/apartment_architecture_Nandyal_1.webp",
+                "../../images/projects/archtechure/apartments/NANDYAL/apartment_architecture_Nandyal_2.webp",
+                "../../images/projects/archtechure/apartments/NANDYAL/apartment_architecture_Nandyal_3.webp",
+                "../../images/projects/archtechure/apartments/NANDYAL/apartment_architecture_Nandyal_4.webp",
+                "../../images/projects/archtechure/apartments/NANDYAL/apartment_architecture_Nandyal_5.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Manchukonda",
+            "title": "Manchukonda",
+            "location": "Maharastra",
+            "siteArea": "25 Acres",
+            "Type": "Traditional",
+            "img": "../../images/projects/archtechure/apartments/VizagAppartments/wm/apartment_architecture_vizagappartments.webp",
+            "description": "The Manchukonda Builders Traditional Development in Maharashtra is a thoughtfully planned 25-acre residential project designed by VAID Architects, inspired by the timeless principles of traditional architecture. The master plan seamlessly blends regional architectural character with modern planning standards, creating a harmonious and sustainable living environment. Featuring well-organized residential layouts, landscaped open spaces, and community-centric infrastructure, the development preserves cultural heritage while delivering comfort, functionality, and long-term value. This project highlights VAID Architects' expertise in traditional residential architecture, master planning, large-scale township design, sustainable community development, and context-sensitive architectural solutions.",
+            "gallery": [
+                "../../images/projects/archtechure/apartments/VizagAppartments/wm/apartment_architecture_vizagappartments.webp",
+                "../../images/projects/archtechure/apartments/VizagAppartments/wm/apartment_architecture_vizagappartments_1.webp",
+                "../../images/projects/archtechure/apartments/VizagAppartments/wm/apartment_architecture_vizagappartments_2.webp",
+                "../../images/projects/archtechure/apartments/VizagAppartments/wm/apartment_architecture_vizagappartments_3.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "commercial": [
+        {
+            "id": "Rohit",
+            "title": "Rohit Commercial Building",
+            "location": "Gopanapalle",
+            "siteArea": "1.2 Acres",
+            "Type": "Commercial & Retail",
+            "img": "../../images/projects/archtechure/commercial/Rohit/apartment_commercial_Roit.webp",
+            "description": "Located in Gopanapalle, this 1.2-acre Commercial & Retail Development by VAID Architects is designed to create a vibrant destination for business, shopping, and customer engagement. The project combines modern commercial architecture, efficient retail planning, and sustainable design principles to maximize functionality, visibility, and user experience. Featuring flexible retail spaces, contemporary facades, optimized circulation, ample parking, and thoughtfully planned public areas, the development enhances commercial value while delivering a dynamic environment for businesses and visitors. This project reflects VAID Architects' expertise in commercial architecture, retail design, mixed-use developments, master planning, and high-performance commercial spaces optimized for long-term growth and investment.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/apartment_commercial_Roit.webp",
+                "../../images/projects/archtechure/commercial/Rohit/apartment_commercial_Roit_1.webp",
+                "../../images/projects/archtechure/commercial/Rohit/apartment_commercial_Roit_2.webp",
+                "../../images/projects/archtechure/commercial/Rohit/apartment_commercial_Roit_3.webp",
+                "../../images/projects/archtechure/commercial/Rohit/apartment_commercial_Roit_4.webp",
+                "../../images/projects/archtechure/commercial/Rohit/apartment_commercial_Roit_5.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Anand",
+            "title": "Anand",
+            "location": "Shamerpet",
+            "siteArea": "1 Acres",
+            "Type": "Commercial & Retail",
+            "img": "../../images/projects/archtechure/commercial/Anand/apartment_commercial_Anand.webp",
+            "description": "Situated in Shamirpet, this 1-acre Commercial & Retail Development by VAID Architects is designed to deliver a contemporary business destination that seamlessly blends commercial architecture, retail planning, and functional design. The project features modern architectural aesthetics, flexible retail and commercial spaces, efficient circulation, ample parking, and pedestrian-friendly planning to enhance customer experience and business visibility. With a focus on sustainable commercial development, optimized space utilization, and long-term investment value, the development creates a vibrant environment for retail, offices, and lifestyle businesses. This project demonstrates VAID Architects' expertise in commercial building design, retail architecture, mixed-use developments, master planning, and high-performance commercial spaces tailored for today's evolving business landscape.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Anand/apartment_commercial_Anand.webp",
+                "../../images/projects/archtechure/commercial/Anand/apartment_commercial_Anand_1.webp",
+                "../../images/projects/archtechure/commercial/Anand/apartment_commercial_Anand_2.webp",
+                "../../images/projects/archtechure/commercial/Anand/apartment_commercial_Anand_3.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Satya",
+            "title": "Satya",
+            "location": "Tellapur",
+            "siteArea": "3 Acres",
+            "Type": "Highrise",
+            "img": "../../images/projects/archtechure/commercial/Satya/wm/apartment_commercial_satya.webp",
+            "description": "Located in Tellapur, this 3-acre high-rise residential development by VAID Architects is designed to redefine contemporary urban living through innovative high-rise architecture, sustainable master planning, and efficient space utilization. The project features modern residential towers, thoughtfully planned apartments, landscaped open spaces, premium lifestyle amenities, and seamless circulation to enhance comfort, connectivity, and community living. Designed with a focus on natural light, ventilation, and long-term sustainability, the development offers an elevated living experience while maximizing land efficiency and investment value. This project showcases VAID Architects' expertise in high-rise residential architecture, apartment design, urban master planning, sustainable housing, and large-scale residential developments.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Satya/wm/apartment_commercial_satya.webp",
+                "../../images/projects/archtechure/commercial/Satya/wm/apartment_commercial_satya_1.webp",
+                "../../images/projects/archtechure/commercial/Satya/wm/apartment_commercial_satya_2.webp",
+                "../../images/projects/archtechure/commercial/Satya/wm/apartment_commercial_satya_3.webp",
+                "../../images/projects/archtechure/commercial/Satya/wm/apartment_commercial_satya_4.webp",
+                "../../images/projects/archtechure/commercial/Satya/wm/apartment_commercial_satya_5.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "farm-house": [
+        {
+            "id": "COCO ",
+            "title": "COCO ",
+            "location": "Tamil Nadu",
+            "siteArea": "20 Acres",
+            "Type": "Contemporary Farm House",
+            "img": "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco.webp",
+            "description": "Located in Tamil Nadu, this 20-acre Contemporary Farmhouse Development by VAID Architects seamlessly blends modern farmhouse architecture with the tranquility of nature. Designed with a focus on sustainable planning, luxury outdoor living, and climate-responsive architecture, the project features contemporary farmhouse residences, expansive landscaped gardens, water features, open green spaces, and thoughtfully planned recreational areas. Every element is crafted to maximize natural light, cross ventilation, and a seamless indoor-outdoor connection, offering a refined countryside lifestyle with modern comforts. This development showcases VAID Architects' expertise in contemporary farmhouse design, luxury residential architecture, master planning, sustainable landscape design, and large-scale rural developments, creating an exclusive destination for premium living amidst nature.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_1.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_2.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_3.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_4.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_5.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_6.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_7.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_8.webp",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/wm/apartment_farmhouse_coco_9.webp"
+            ]
+        },
+        {
+            "id": "Manduva",
+            "title": "Manduva ",
+            "location": "Hyderbad",
+            "siteArea": "3.7 Acres",
+            "Type": " Manduva Style House",
+            "img": "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava.webp",
+            "description": "Located in Hyderabad, this 3.7-acre Manduva Style House by VAID Architects celebrates the timeless elegance of traditional Indian courtyard architecture while incorporating the comfort and functionality of contemporary living. Inspired by the heritage Manduva house concept, the design features a central open courtyard, spacious verandahs, climate-responsive planning, natural ventilation, and abundant daylight to create a harmonious connection between indoor and outdoor spaces. Crafted with authentic architectural elements, landscaped surroundings, and sustainable design principles, the project preserves cultural heritage while meeting modern lifestyle needs. This development reflects VAID Architects' expertise in Manduva house design, traditional architecture, luxury heritage homes, courtyard house planning, climate-responsive architecture, and custom residential design.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_1.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_2.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_3.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_4.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_5.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_6.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_7.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_8.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_9.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_10.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_11.webp",
+                "../../images/projects/archtechure/farm-house/Manduva/wm/apartment_farmhouse_mandava_12.webp"
+            ]
+        },
+        {
+            "id": "Nandha Kishore",
+            "title": "NandhaKishore ",
+            "location": "Maheshwaram",
+            "siteArea": "7 Acres",
+            "Type": "Contemporary Farm House",
+            "img": "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore.webp",
+            "description": "Located in Maheshwaram, this 7-acre Contemporary Farmhouse Development by VAID Architects is designed to offer an exceptional blend of luxury farmhouse architecture, modern design, and nature-inspired living. The project embraces contemporary architecture, sustainable master planning, and climate-responsive design, creating expansive living spaces that seamlessly connect with landscaped gardens, water features, and open green environments. Every element is thoughtfully planned to maximize natural light, ventilation, privacy, and outdoor experiences while delivering a refined lifestyle in a serene setting. This development reflects VAID Architects' expertise in contemporary farmhouse design, luxury residential architecture, farmhouse master planning, sustainable landscape architecture, custom home design, and premium countryside developments, offering a perfect balance between modern comfort and natural surroundings.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore.webp",
+                "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore_1.webp",
+                "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore_2.webp",
+                "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore_3.webp",
+                "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore_4.webp",
+                "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore_5.webp",
+                "../../images/projects/archtechure/farm-house/Nandakishore/wm/apartment_farmhouse_Nandakishore_6.webp"
+            ]
+        },
+        {
+            "id": "Thatha Manavadu",
+            "title": "Thatha Manavadu ",
+            "location": "Maharastra",
+            "siteArea": "2 Acres",
+            "Type": "Traditional",
+            "img": "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu.webp",
+            "description": "Thatha Manavadu is a 2-acre traditional residential development in Maharashtra, thoughtfully designed by VAID Architects to celebrate India's rich architectural heritage while meeting the needs of modern family living. Inspired by timeless traditional architecture, the project incorporates authentic regional design elements, spacious courtyards, verandahs, sloping roofs, and climate-responsive planning to create a warm, inviting, and sustainable living environment. The development seamlessly blends heritage aesthetics with contemporary functionality, ensuring comfort, natural ventilation, abundant daylight, and a strong connection to nature. Showcasing expertise in traditional house design, heritage-inspired architecture, luxury residential planning, courtyard homes, sustainable architecture, and custom home design, this project reflects VAID Architects' commitment to preserving cultural identity through timeless architectural excellence.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu_1.webp",
+                "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu_2.webp",
+                "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu_3.webp",
+                "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu_4.webp",
+                "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu_5.webp",
+                "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu_6.webp",
+                "../../images/projects/archtechure/farm-house/thatamanavadu/apartment_farmhouse_thatamanavadu_7.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "US Manduva",
+            "title": "US Manduva ",
+            "location": "North Carolina",
+            "siteArea": "53 Acres",
+            "Type": "Traditional Manduva Style",
+            "img": "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana.webp",
+            "description": "Located in North Carolina, United States, this 53-acre Traditional Manduva Style Development by VAID Architects reimagines the timeless essence of Indian courtyard architecture for an international setting. Inspired by the heritage Manduva house concept, the project seamlessly blends traditional Indian architecture with contemporary planning to create luxurious residences that celebrate culture, craftsmanship, and sustainable living. The master plan features expansive courtyards, elegant verandahs, landscaped gardens, climate-responsive design, and seamless indoor-outdoor connections that maximize natural light and ventilation. Thoughtfully adapted to its surroundings, the development offers a unique fusion of heritage and modern comfort, showcasing VAID Architects' expertise in Manduva house design, traditional residential architecture, luxury estate plan",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana.webp",
+                "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana_1.webp",
+                "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana_2.webp",
+                "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana_3.webp",
+                "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana_4.webp",
+                "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana_5.webp",
+                "../../images/projects/archtechure/farm-house/usa_nc/wm/apartment_farmhouse_usana_6.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "gated-community": [
+        {
+            "id": "Blue Bay",
+            "title": "Blue Bay",
+            "location": "Vishakapatnam",
+            "siteArea": "7 Acres",
+            "Type": "Gated Community Villas",
+            "img": "../../images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu.webp",
+            "description": "Blue Bay is a thoughtfully planned 7-acre gated community villa development in Visakhapatnam, designed to offer privacy, comfort, and a refined residential lifestyle. The project integrates contemporary villa architecture, efficient master planning, landscaped open spaces, pedestrian-friendly pathways, and well-organized internal circulation to create a secure and harmonious living environment. Each villa is planned to maximise natural daylight, cross ventilation, functional space utilisation, and a seamless connection between indoor and outdoor areas. The community layout balances private residences with shared green zones and lifestyle amenities, creating an attractive destination for modern families and premium homebuyers. Blue Bay reflects VAID Architects\u2019 expertise in gated community planning, luxury villa design, residential master planning, sustainable architecture, landscape integration, and premium housing developments.",
+            "gallery": [
+                "../../images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu.webp",
+                "../../images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu_1.webp",
+                "../../images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu_2.webp",
+                "../../images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu_3.webp",
+                "../../images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu_4.webp",
+                "../../images/projects/archtechure/gated-community/CHEPALUPPADA/apartment_GatedCommunity_Chepaluppadu_5.webp"
+            ]
+        },
+        {
+            "id": "IMark",
+            "title": "IMark",
+            "location": "Vikarabad",
+            "siteArea": "25 Acres",
+            "Type": "Gated Community Villas",
+            "img": "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark.webp",
+            "description": "Located in Vikarabad, this 25-acre Gated Community Villa Development by VAID Architects is envisioned as a premium residential destination that combines luxury villa architecture, sustainable master planning, and nature-inspired living. The community is thoughtfully designed with spacious villas, landscaped green corridors, tree-lined avenues, recreational amenities, and secure internal road networks to create a vibrant and well-connected neighbourhood. Every residence is planned to maximise natural light, cross ventilation, privacy, and functional living spaces while maintaining a seamless relationship with the surrounding landscape. The master plan emphasizes a balanced lifestyle through open green spaces, pedestrian-friendly environments, and modern infrastructure that enhances both comfort and long-term value. This project showcases VAID Architects' expertise in gated community planning, luxury villa design, residential master planning, sustainable architecture, landscape integration, and large-scale township development, delivering an exceptional living experience for contemporary families.",
+            "gallery": [
+                "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark.webp",
+                "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark_1.webp",
+                "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark_2.webp",
+                "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark_3.webp",
+                "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark_4.webp",
+                "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark_5.webp",
+                "../../images/projects/archtechure/gated-community/Imark/wm/apartment_GatedCommunity_imark_6.webp"
+            ]
+        },
+        {
+            "id": "Kapulappada",
+            "title": "Kapulappada",
+            "location": "Vishakapatnam",
+            "siteArea": "7 Acres",
+            "Type": "Comtemporary Villas",
+            "img": "../../images/projects/archtechure/gated-community/KAPULAPPADA/apartment_GatedCommunity_kapulappadu.webp",
+            "description": "Located in Visakhapatnam, this 7-acre Contemporary Villa Development by VAID Architects is designed to redefine modern luxury through innovative architecture, functional planning, and sustainable living. The project features elegantly crafted contemporary villas that seamlessly integrate clean architectural lines, spacious interiors, expansive glazing, and landscaped outdoor spaces to create a refined residential experience. Every villa is thoughtfully planned to maximize natural light, cross ventilation, privacy, and energy efficiency while maintaining a strong connection with the surrounding environment. The master planning emphasizes open green spaces, well-organized circulation, premium amenities, and a harmonious balance between built and natural elements, offering residents an exclusive lifestyle. This development showcases VAID Architects' expertise in contemporary villa architecture, luxury residential design, villa master planning, sustainable architecture, landscape integration, and premium housing developments, delivering timeless homes that combine elegance, comfort, and lasting value.",
+            "gallery": [
+                "../../images/projects/archtechure/gated-community/KAPULAPPADA/apartment_GatedCommunity_kapulappadu.webp",
+                "../../images/projects/archtechure/gated-community/KAPULAPPADA/apartment_GatedCommunity_kapulappadu_1.webp",
+                "../../images/projects/archtechure/gated-community/KAPULAPPADA/apartment_GatedCommunity_kapulappadu_2.webp",
+                "../../images/projects/archtechure/gated-community/KAPULAPPADA/apartment_GatedCommunity_kapulappadu_3.webp",
+                "../../images/projects/archtechure/gated-community/KAPULAPPADA/apartment_GatedCommunity_kapulappadu_4.webp",
+                "../../images/projects/archtechure/gated-community/KAPULAPPADA/apartment_GatedCommunity_kapulappadu_5.webp"
+            ]
+        }
+    ],
+    "hospitals": [
+        {
+            "id": "Omprakash",
+            "title": "Om prakash",
+            "location": "SangaReddy",
+            "siteArea": "5000 Sqm",
+            "Type": "50 Bedded Hospital",
+            "img": "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om.webp",
+            "description": "Located in Sangareddy, this 5,000 sq.m. 50-Bedded Hospital by VAID Architects is designed to deliver a modern, patient-centric healthcare environment that prioritizes functionality, efficiency, and healing. The hospital integrates contemporary healthcare architecture with intelligent space planning to ensure smooth clinical workflows, patient comfort, and operational excellence. The design incorporates well-planned outpatient departments, inpatient wards, emergency care, operation theatres, diagnostic facilities, intensive care units, and dedicated support services, all connected through efficient circulation systems. Emphasizing infection control, natural daylight, ventilation, accessibility, and sustainable building practices, the facility creates a safe and welcoming environment for patients, caregivers, and medical professionals alike. This project demonstrates VAID Architects' expertise in hospital architecture, healthcare facility planning, medical infrastructure design, institutional architecture, sustainable healthcare buildings, and patient-focused design, delivering healthcare spaces that combine clinical efficiency with architectural excellence.",
+            "gallery": [
+                "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om.webp",
+                "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om_1.webp",
+                "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om_2.webp",
+                "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om_3.webp",
+                "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om_4.webp",
+                "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om_5.webp",
+                "../../images/projects/archtechure/hospitals/om/wm/apartment_Hospitals_om_6.webp"
+            ]
+        },
+        {
+            "id": "City",
+            "title": "City",
+            "location": "SangaReddy",
+            "siteArea": "1 Acres",
+            "Type": "Hospital",
+            "img": "../../images/projects/archtechure/hospitals/city/wm/apartment_Hospitals_city.webp",
+            "description": "Located in Sangareddy, City Hospital is a thoughtfully designed hospital project spread across 1 acre, created to provide efficient, patient-focused healthcare in a modern and welcoming environment. The architectural design emphasizes functional planning, streamlined clinical workflows, and comfortable healing spaces while ensuring operational efficiency for healthcare professionals. The facility is planned with well-organized outpatient departments, consultation rooms, diagnostic services, emergency care, inpatient wards, and support facilities, allowing for seamless movement of patients, staff, and visitors. The design prioritizes natural daylight, cross ventilation, accessibility, infection control, and sustainable building practices to enhance patient well-being and create a healthier indoor environment. With a contemporary architectural approach and future-ready infrastructure, City Hospital reflects VAID Architects' expertise in hospital architecture, healthcare facility planning, institutional architecture, medical infrastructure design, sustainable healthcare buildings, and patient-centric design, delivering healthcare spaces that balance functionality, efficiency, and architectural excellence.",
+            "gallery": [
+                "../../images/projects/archtechure/hospitals/city/wm/apartment_Hospitals_city.webp",
+                "../../images/projects/archtechure/hospitals/city/wm/apartment_Hospitals_city_1.webp",
+                "../../images/projects/archtechure/hospitals/city/wm/apartment_Hospitals_city_2.webp",
+                "../../images/projects/archtechure/hospitals/city/wm/apartment_Hospitals_city_3.webp",
+                "../../images/projects/archtechure/hospitals/city/wm/apartment_Hospitals_city_4.webp",
+                "../../images/projects/archtechure/hospitals/city/wm/apartment_Hospitals_city_5.webp"
+            ]
+        }
+    ],
+    "Industrial": [
+        {
+            "id": "Cadbuary",
+            "title": "Cadbuary",
+            "location": "Sri City",
+            "siteArea": "150 Acres",
+            "Type": "Industrial Extension",
+            "img": "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury.webp",
+            "description": "Located in Sri City, this 150-acre Industrial Extension by VAID Architects is a large-scale industrial development planned to support future-ready manufacturing, logistics, and industrial operations. The master plan focuses on creating an efficient industrial ecosystem with well-organized infrastructure, optimized land utilization, and seamless connectivity for industrial growth. Designed to accommodate production facilities, warehouses, administrative buildings, utility zones, and transportation networks, the project ensures smooth operational workflows while maintaining flexibility for future expansion. Wide internal roadways, dedicated service corridors, sustainable stormwater management, landscaped buffers, and environmentally conscious planning contribute to a productive and resilient industrial environment. By integrating modern infrastructure with sustainable planning principles, the development enhances operational efficiency while promoting long-term economic growth. This project reflects VAID Architects' expertise in industrial architecture, industrial master planning, manufacturing facility design, logistics and warehouse planning, large-scale industrial infrastructure, and sustainable industrial development, delivering high-performance industrial environments built for the future.",
+            "gallery": [
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_1.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_2.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_3.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_4.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_5.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_6.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_7.webp",
+                "../../images/projects/archtechure/Industrial/CADBURY/wm/apartment_Industrial_cadbury_8.webp"
+            ]
+        },
+        {
+            "id": "CCL",
+            "title": "CCL",
+            "location": "Sullurpet",
+            "siteArea": "150 Acres",
+            "Type": "Contemporary",
+            "img": "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL.webp",
+            "description": "Located in Sullurpet, the CCL Contemporary Industrial Development is a 150-acre master-planned project that reflects VAID Architects' expertise in designing large-scale industrial environments with a strong focus on functionality, sustainability, and architectural excellence. The development is envisioned to support modern manufacturing and industrial operations through efficient land utilization, well-planned circulation networks, advanced infrastructure, and flexible expansion opportunities. Contemporary architectural principles are combined with climate-responsive design, landscaped green buffers, and sustainable site planning to create a productive and environmentally responsible industrial campus. The project incorporates production facilities, administrative buildings, logistics zones, utility infrastructure, and organized transportation systems, ensuring seamless operational efficiency while enhancing the workplace environment. By balancing industrial performance with thoughtful planning and modern aesthetics, the development creates a future-ready industrial ecosystem. This project showcases VAID Architects' capabilities in industrial architecture, industrial master planning, contemporary industrial design, manufacturing facility planning, sustainable industrial development, and large-scale infrastructure design, delivering innovative industrial spaces that support long-term business growth and operational excellence.",
+            "gallery": [
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_1.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_2.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_3.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_4.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_5.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_6.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_7.webp",
+                "../../images/projects/archtechure/Industrial/CCL/wm/apartment_Industrial_CCL_8.webp"
+            ]
+        },
+        {
+            "id": "ICHOR",
+            "title": "ICHOR",
+            "location": "Turkapally",
+            "siteArea": "10.7 Acres",
+            "Type": " Reseaerch & Production Block",
+            "img": "../../images/projects/archtechure/Industrial/ICHOR/apartment_Industrial_ICHOR.webp",
+            "description": "Located in Turkapally, the ICHOR Research & Production Block is a 10.7-acre state-of-the-art facility designed by VAID Architects to support advanced research, biotechnology, and production activities within a highly efficient and sustainable environment. The master plan integrates modern research laboratories, production units, administrative offices, quality control areas, utilities, and support infrastructure into a cohesive campus that promotes innovation, operational efficiency, and future scalability. The architecture emphasizes clean contemporary design, optimized workflow planning, controlled environments, and seamless circulation between research and manufacturing zones. Sustainable planning principles, natural daylight, energy-efficient systems, landscaped open spaces, and climate-responsive design contribute to a productive and environmentally responsible workplace. The project reflects VAID Architects' expertise in research facility architecture, industrial and biotechnology campus planning, pharmaceutical infrastructure design, production facility planning, laboratory architecture, and sustainable industrial development, delivering a future-ready environment that fosters scientific excellence, innovation, and operational performance.",
+            "gallery": [
+                "../../images/projects/archtechure/Industrial/ICHOR/apartment_Industrial_ICHOR.webp",
+                "../../images/projects/archtechure/Industrial/ICHOR/apartment_Industrial_ICHOR_1.webp",
+                "../../images/projects/archtechure/Industrial/ICHOR/apartment_Industrial_ICHOR_2.webp",
+                "../../images/projects/archtechure/Industrial/ICHOR/apartment_Industrial_ICHOR_3.webp",
+                "../../images/projects/archtechure/Industrial/ICHOR/apartment_Industrial_ICHOR_4.webp",
+                "../../images/projects/archtechure/Industrial/ICHOR/apartment_Industrial_ICHOR_5.webp"
+            ]
+        },
+        {
+            "id": "Rahul Factory",
+            "title": "Rahul Factory",
+            "location": "Tukkaguda",
+            "siteArea": "1 Acres",
+            "Type": "Contemporary",
+            "img": "../../images/projects/archtechure/Industrial/Rahul-Factory/wm/apartment_Industrial_rahul.webp",
+            "description": "Located in Tukkaguda, this 1-acre Contemporary Industrial Project by VAID Architects is designed to meet the evolving needs of modern industries through efficient planning, innovative architecture, and sustainable development. The project combines contemporary design principles with practical industrial functionality, creating a high-performance facility that supports manufacturing, production, warehousing, and administrative operations. The master plan emphasizes optimized site utilization, smooth vehicular movement, organized service infrastructure, and flexible layouts that can adapt to future operational requirements. Large-span spaces, energy-efficient building systems, natural daylight, ventilation, and landscaped open areas contribute to a productive and environmentally responsible industrial campus. With a clean architectural language and carefully planned infrastructure, the development enhances operational efficiency while presenting a strong corporate identity. This project showcases VAID Architects' expertise in industrial architecture, contemporary industrial design, manufacturing facility planning, industrial campus development, warehouse and production facility design, and sustainable industrial infrastructure, delivering modern industrial environments that seamlessly integrate functionality, scalability, and architectural excellence.",
+            "gallery": [
+                "../../images/projects/archtechure/Industrial/Rahul-Factory/wm/apartment_Industrial_rahul.webp",
+                "../../images/projects/archtechure/Industrial/Rahul-Factory/wm/apartment_Industrial_rahul_1.webp",
+                "../../images/projects/archtechure/Industrial/Rahul-Factory/wm/apartment_Industrial_rahul_2.webp",
+                "../../images/projects/archtechure/Industrial/Rahul-Factory/wm/apartment_Industrial_rahul_3.webp"
+            ]
+        }
+    ],
+    "institution": [
+        {
+            "id": "Kalpataru",
+            "title": "Kalpataru",
+            "location": "Chennai",
+            "siteArea": "10 Acres",
+            "Type": "Contemporary",
+            "img": "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru.webp",
+            "description": "Located in Chennai, this 10-acre Contemporary Institutional Project by VAID Architects is thoughtfully planned to create an inspiring, functional, and future-ready educational and institutional environment. The campus master plan integrates modern architecture with efficient space planning to support learning, collaboration, administration, and community engagement. Designed with a strong emphasis on user experience, the development features academic blocks, administrative facilities, multipurpose spaces, landscaped courtyards, recreational areas, and well-connected pedestrian networks that encourage interaction and accessibility. Contemporary architectural elements, abundant natural daylight, cross ventilation, energy-efficient systems, and sustainable design strategies create a healthy and productive environment for students, faculty, and visitors. The project balances aesthetics with operational efficiency, ensuring flexibility for future expansion while maintaining a cohesive campus identity. This development reflects VAID Architects' expertise in institutional architecture, educational campus planning, contemporary institutional design, master planning, sustainable campus development, and public infrastructure design, delivering innovative institutional environments that foster learning, collaboration, and long-term growth.",
+            "gallery": [
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru.webp",
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru_1.webp",
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru_2.webp",
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru_3.webp",
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru_4.webp",
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru_5.webp",
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru_6.webp",
+                "../../images/projects/archtechure/institution/KALPATARU/apartment_Institution_kalpataru_7.webp"
+            ]
+        },
+        {
+            "id": "PMJVK",
+            "title": "PMJVK",
+            "location": "Nellore",
+            "siteArea": "25 Acres",
+            "Type": " Educational Block",
+            "img": "../../images/projects/archtechure/institution/pnjvk/apartment_Institution_pnjvk.webp",
+            "description": "Located in Nellore, the PMJVK Educational Block is a 25-acre institutional development designed by VAID Architects to create a dynamic, inclusive, and future-ready learning environment. The campus is thoughtfully planned to support academic excellence through efficient space planning, contemporary architecture, and sustainable design principles. The development includes well-organized academic blocks, administrative facilities, libraries, laboratories, multipurpose halls, student activity zones, landscaped open spaces, and recreational areas that encourage learning, collaboration, and community engagement. Emphasis is placed on natural daylight, cross ventilation, universal accessibility, and energy-efficient building systems to provide a healthy and comfortable environment for students, faculty, and visitors. The master plan also allows for future expansion while maintaining a cohesive campus identity and seamless circulation throughout the site. This project highlights VAID Architects' expertise in educational architecture, institutional campus planning, school and college design, master planning, sustainable educational infrastructure, and contemporary institutional architecture, delivering inspiring learning environments that promote innovation, growth, and long-term academic success.",
+            "gallery": [
+                "../../images/projects/archtechure/institution/pnjvk/apartment_Institution_pnjvk.webp",
+                "../../images/projects/archtechure/institution/pnjvk/apartment_Institution_pnjvk_1.webp",
+                "../../images/projects/archtechure/institution/pnjvk/apartment_Institution_pnjvk_2.webp",
+                "../../images/projects/archtechure/institution/pnjvk/apartment_Institution_pnjvk_3.webp",
+                "../../images/projects/archtechure/institution/pnjvk/apartment_Institution_pnjvk_4.webp",
+                "../../images/projects/archtechure/institution/pnjvk/apartment_Institution_pnjvk_5.webp"
+            ]
+        }
+    ],
+    "restaurant": [
+        {
+            "id": "Runway9",
+            "title": "Runway - 9",
+            "location": "Gajwel",
+            "siteArea": "2.5 Acres",
+            "Type": "Restaurant",
+            "img": "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_01.webp",
+            "description": "Located in Gajwel, Runway-9 is a 2.5-acre contemporary restaurant development designed by VAID Architects to deliver a distinctive dining destination that seamlessly blends architecture, landscape, and hospitality. The project is thoughtfully master planned to create an immersive culinary experience through elegant contemporary design, inviting outdoor spaces, and a strong connection with nature. Featuring spacious indoor and alfresco dining areas, landscaped gardens, water features, event spaces, and well-organized circulation, the development offers a memorable environment for families, social gatherings, and destination dining. The architecture emphasizes natural light, cross ventilation, premium materials, and sustainable design strategies to enhance both guest comfort and operational efficiency. Every space is designed to elevate the overall dining experience while creating a strong visual identity for the brand. This project showcases VAID Architects' expertise in restaurant architecture, hospitality design, resort-style restaurant planning, commercial architecture, landscape-integrated dining spaces, contemporary restaurant design, and destination hospitality projects, creating vibrant spaces that combine exceptional design with unforgettable customer experiences.",
+            "gallery": [
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_01.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_02.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_03.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_04.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_05.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_06.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_07.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_08.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_09.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_14.webp",
+                "../../images/projects/archtechure/restaurant/RUNWAY/wm/Archtechure_RESTAURANT_RUNWAY_15.webp"
+            ]
+        },
+        {
+            "id": "Krishna",
+            "title": "Krishna",
+            "location": "Gajwel",
+            "siteArea": "2.5 Acres",
+            "Type": "Restaurant",
+            "img": "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_001.webp",
+            "description": "Located in Gajwel, Krishna Restaurant is a 2.5-acre hospitality project designed by VAID Architects to offer a contemporary dining experience that blends elegant architecture with functional planning and inviting outdoor spaces. The development is thoughtfully planned to create a vibrant destination for families, travelers, and social gatherings, featuring spacious indoor dining areas, open-air seating, landscaped surroundings, and seamless circulation throughout the site. The architectural design emphasizes clean contemporary aesthetics, natural daylight, cross ventilation, and sustainable planning to provide a comfortable and memorable dining atmosphere. Carefully integrated landscape elements, welcoming arrival spaces, and efficient back-of-house planning ensure a balance between guest experience and operational excellence. Designed to establish a strong brand identity while enhancing customer comfort, the project reflects modern hospitality standards. This development showcases VAID Architects' expertise in restaurant architecture, hospitality design, commercial architecture, contemporary restaurant design, landscape-integrated dining environments, food and beverage facility planning, and destination restaurant development, creating exceptional spaces that combine aesthetics, functionality, and unforgettable dining experiences.",
+            "gallery": [
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_001.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_002.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_003.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_004.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_005.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_006.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_007.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_008.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_009.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_10.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_11.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_12.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_13.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_14.webp",
+                "../../images/projects/archtechure/restaurant/krishna/wm/Archtechure_RESTAURANT_KRISHNA_15.webp"
+            ]
+        }
+    ],
+    "sports": [
+        {
+            "id": "AYRA",
+            "title": "AYRA",
+            "location": "Bangalore",
+            "siteArea": "4 Acres",
+            "Type": "Sports Block",
+            "img": "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_01.webp",
+            "description": "Located in Bangalore, the AYRA Sports Block is a 4-acre contemporary sports facility designed by VAID Architects to promote athletic excellence, recreation, and community engagement through innovative architectural planning. The project is thoughtfully designed to accommodate a wide range of indoor and outdoor sports facilities, training zones, fitness areas, spectator spaces, and supporting amenities within a cohesive and efficient campus layout. The architecture emphasizes flexible planning, uninterrupted circulation, and high-performance infrastructure to create an environment that supports athletes, coaches, and visitors alike. Natural daylight, cross ventilation, sustainable building strategies, and landscaped outdoor spaces enhance user comfort while reducing environmental impact. With its clean contemporary design and future-ready infrastructure, the sports block provides an inspiring destination for competitive sports, fitness, and wellness activities. This project showcases VAID Architects' expertise in sports architecture, sports complex design, institutional sports infrastructure, recreational facility planning, contemporary sports facility design, campus master planning, and sustainable public architecture, delivering world-class sports environments that encourage performance, community interaction, and long-term development.",
+            "gallery": [
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_01.webp",
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_02.webp",
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_03.webp",
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_04.webp",
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_05.webp",
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_06.webp",
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_07.webp",
+                "../../images/projects/archtechure/sports/Ayra/wm/Archtechure_sprots_arya_08.webp"
+            ]
+        }
+    ],
+    "industry": []
+}

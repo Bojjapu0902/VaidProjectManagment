@@ -7,6 +7,7 @@ import useThemeSync from "./hooks/useThemeSync";
 import { ROUTES } from "./constants/routes";
 
 import LoginPage from "./pages/auth/LoginPage";
+import ResetPasswordPage from "./pages/auth/ResetPasswordPage";
 
 import AdminDashboardPage from "./pages/admin/AdminDashboardPage";
 import AdminProjectListPage from "./pages/admin/AdminProjectListPage";
@@ -42,6 +43,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigate to={ROUTES.LOGIN} replace />} />
         <Route path={ROUTES.LOGIN} element={<LoginPage />} />
+        <Route path={ROUTES.RESET_PASSWORD} element={<ResetPasswordPage />} />
 
         {/* ---------- Admin / Team Portal ---------- */}
         <Route element={<ProtectedRoute portal="admin" />}>

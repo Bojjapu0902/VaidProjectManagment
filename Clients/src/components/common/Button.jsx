@@ -3,6 +3,8 @@ import clsx from "clsx";
 const VARIANT_CLASS = {
   primary: "btn-primary",
   secondary: "btn-secondary",
+  accent: "btn-accent",
+  approve: "btn-approve",
   danger: "btn-danger",
   ghost: "bg-transparent text-(--color-text-secondary) hover:bg-(--color-bg)",
 };
@@ -32,7 +34,6 @@ export default function Button({
         "btn",
         VARIANT_CLASS[variant],
         SIZE_CLASS[size],
-        disabled && "opacity-50 cursor-not-allowed",
         className
       )}
       {...rest}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Topbar from "../../components/layout/Topbar";
 import Button from "../../components/common/Button";
@@ -16,7 +17,7 @@ import {
   useGetNotificationsQuery,
 } from "../../app/api/apiSlice";
 import { getStageByNumber } from "../../constants/stages";
-import { formatRelativeTime } from "../../utils/format";
+import { formatRelativeTime, formatDate } from "../../utils/format";
 import { ROUTES } from "../../constants/routes";
 
 const NOTIFICATION_COLORS = {
@@ -33,15 +34,18 @@ export default function ClientDashboardPage() {
   const navigate = useNavigate();
   const { user } = useAuth();
   const { data: projects = [], isLoading } = useGetProjectsQuery({ role: user?.role, userId: user?.id });
-  const primaryProject = projects[0];
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
+  // A client with several projects gets a switcher; the dashboard otherwise
+  // defaults to their first project.
+  const activeProject = projects.find((p) => p.id === selectedProjectId) || projects[0];
 
   const { data: approvals = [] } = useGetApprovalsQuery(
-    { projectId: primaryProject?.id },
-    { skip: !primaryProject }
+    { projectId: activeProject?.id },
+    { skip: !activeProject }
   );
   const { data: documents = [] } = useGetDocumentsByProjectQuery(
-    { projectId: primaryProject?.id, clientVisibleOnly: true },
-    { skip: !primaryProject }
+    { projectId: activeProject?.id, clientVisibleOnly: true },
+    { skip: !activeProject }
   );
   const { data: notifications = [] } = useGetNotificationsQuery(user?.id, { skip: !user });
 
@@ -54,7 +58,7 @@ export default function ClientDashboardPage() {
     );
   }
 
-  if (!primaryProject) {
+  if (!activeProject) {
     return (
       <>
         <Topbar title="Welcome" notificationsRoute={ROUTES.CLIENT.NOTIFICATIONS} />
@@ -63,8 +67,9 @@ export default function ClientDashboardPage() {
     );
   }
 
-  const stage = getStageByNumber(primaryProject.currentStage);
+  const stage = getStageByNumber(activeProject.currentStage);
   const firstName = user?.name?.split(" ")[0];
+  // Only items genuinely pending on the client — never internal review items.
   const reviewItems = approvals.filter((a) => a.urgency === "client-action");
 
   const recentActivity = notifications.slice(0, 6).map((n) => ({
@@ -79,13 +84,13 @@ export default function ClientDashboardPage() {
     <>
       <Topbar
         title={`Welcome back, ${firstName}`}
-        subtitle={`${primaryProject.title} is in ${stage.name}`}
+        subtitle={`${activeProject.title} is in ${stage.shortName}`}
         notificationsRoute={ROUTES.CLIENT.NOTIFICATIONS}
         actions={
           <Button
             variant="primary"
             icon={<Icon name="eye" size={15} />}
-            onClick={() => navigate(ROUTES.CLIENT.PROJECT_DOCUMENTS(primaryProject.id))}
+            onClick={() => navigate(ROUTES.CLIENT.PROJECT_DOCUMENTS(activeProject.id))}
           >
             View drawings
           </Button>
@@ -93,7 +98,29 @@ export default function ClientDashboardPage() {
       />
 
       <div className="p-8 flex-1 overflow-y-auto">
-        <ProgressHero project={primaryProject} />
+        {projects.length > 1 && (
+          <div className="flex items-center gap-2.5 mb-4.5">
+            <Icon name="folders" size={15} className="text-(--color-text-secondary) flex-shrink-0" />
+            <label htmlFor="dashboard-project-switch" className="text-xs font-semibold text-(--color-text-secondary)">
+              Viewing
+            </label>
+            <select
+              id="dashboard-project-switch"
+              className="input-field w-auto py-1.5 text-[13px] font-semibold"
+              value={activeProject.id}
+              onChange={(e) => setSelectedProjectId(e.target.value)}
+            >
+              {projects.map((p) => (
+                <option key={p.id} value={p.id}>
+                  {p.title}
+                  {p.progressPercent >= 100 ? " · complete" : ""}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        <ProgressHero project={activeProject} />
 
         <Card padded={false} className="mb-4.5">
           <CardHeader
@@ -101,18 +128,44 @@ export default function ClientDashboardPage() {
             action={
               <button
                 className="text-xs font-semibold text-(--color-portal-primary)"
-                onClick={() => navigate(ROUTES.CLIENT.PROJECT_TIMELINE(primaryProject.id))}
+                onClick={() => navigate(ROUTES.CLIENT.PROJECT_TIMELINE(activeProject.id))}
               >
                 View full timeline
               </button>
             }
           />
           <CardBody>
-            <StageTracker currentStage={primaryProject.currentStage} />
+            <StageTracker currentStage={activeProject.currentStage} />
           </CardBody>
         </Card>
 
-        <div className="grid grid-cols-[1.5fr_1fr] gap-4.5">
+        {/* Amber banner — shown only when something is genuinely pending on
+            the client, never for internal review items. */}
+        {reviewItems.length > 0 && (
+          <div className="border border-(--color-amber) rounded-(--radius-md) bg-(--color-amber-light) px-6 py-5 mb-4.5 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+            <div className="flex flex-col gap-1.5 min-w-0">
+              <span className="flex items-center gap-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-(--color-amber-dark)">
+                <Icon name="alert-triangle" size={12} />
+                Action required · {reviewItems[0].dueIn}
+              </span>
+              <span className="text-lg font-semibold text-(--color-text-primary)">
+                {reviewItems.length} document{reviewItems.length > 1 ? "s" : ""} need{reviewItems.length === 1 ? "s" : ""} your review
+              </span>
+              <span className="text-[13px] text-(--color-text-secondary)">
+                Sent {formatDate(reviewItems[0].requestedAt, "d MMMM")}. Review the drawings, leave a comment if anything needs changing, then approve to keep the project moving.
+              </span>
+            </div>
+            <Button
+              variant="accent"
+              className="flex-none"
+              onClick={() => navigate(ROUTES.CLIENT.PROJECT_APPROVALS(activeProject.id))}
+            >
+              Review &amp; approve
+            </Button>
+          </div>
+        )}
+
+        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-4.5">
           <div>
             <Card padded={false} className="mb-4.5">
               <CardHeader
@@ -120,7 +173,7 @@ export default function ClientDashboardPage() {
                 action={
                   <button
                     className="text-xs font-semibold text-(--color-portal-primary)"
-                    onClick={() => navigate(ROUTES.CLIENT.PROJECT_APPROVALS(primaryProject.id))}
+                    onClick={() => navigate(ROUTES.CLIENT.PROJECT_APPROVALS(activeProject.id))}
                   >
                     View all
                   </button>
@@ -129,7 +182,7 @@ export default function ClientDashboardPage() {
               <CardBody>
                 <ReviewQueueList
                   approvals={reviewItems}
-                  onReview={() => navigate(ROUTES.CLIENT.PROJECT_APPROVALS(primaryProject.id))}
+                  onReview={() => navigate(ROUTES.CLIENT.PROJECT_APPROVALS(activeProject.id))}
                 />
               </CardBody>
             </Card>
@@ -140,16 +193,22 @@ export default function ClientDashboardPage() {
                 action={
                   <button
                     className="text-xs font-semibold text-(--color-portal-primary)"
-                    onClick={() => navigate(ROUTES.CLIENT.PROJECT_DOCUMENTS(primaryProject.id))}
+                    onClick={() => navigate(ROUTES.CLIENT.PROJECT_DOCUMENTS(activeProject.id))}
                   >
                     Document centre
                   </button>
                 }
               />
               <CardBody>
-                {documents.slice(0, 3).map((doc) => (
-                  <DocumentRow key={doc.id} doc={doc} />
-                ))}
+                {documents.length === 0 ? (
+                  <p className="text-sm text-(--color-text-secondary) py-6 text-center">
+                    {activeProject.currentStage < 2
+                      ? "Documents will appear here as work on your project progresses."
+                      : "No documents have been shared yet."}
+                  </p>
+                ) : (
+                  documents.slice(0, 3).map((doc) => <DocumentRow key={doc.id} doc={doc} />)
+                )}
               </CardBody>
             </Card>
           </div>
@@ -165,7 +224,7 @@ export default function ClientDashboardPage() {
             <Card padded={false}>
               <CardHeader title="Project team" />
               <CardBody>
-                {primaryProject.team.map((m) => (
+                {activeProject.team.map((m) => (
                   <TeamMemberRow key={m.userId} member={m} />
                 ))}
               </CardBody>

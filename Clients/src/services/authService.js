@@ -34,4 +34,21 @@ export const authService = {
     }
     return axiosInstance.get("/auth/me");
   },
+
+  async forgotPassword({ email }) {
+    if (USE_MOCKS) {
+      // Always the same response whether the email exists or not — the API
+      // never confirms which accounts are registered.
+      return mockResolve({ message: "If that email exists, a reset link has been sent." });
+    }
+    return axiosInstance.post("/auth/forgot-password", { email });
+  },
+
+  async resetPassword({ token, password }) {
+    if (USE_MOCKS) {
+      if (!token) return mockReject("Reset token is invalid or has expired", 400);
+      return mockResolve({ message: "Password has been reset. Please log in with your new password." });
+    }
+    return axiosInstance.post("/auth/reset-password", { token, password });
+  },
 };

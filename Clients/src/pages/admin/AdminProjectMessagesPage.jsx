@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Topbar from "../../components/layout/Topbar";
 import { Card } from "../../components/common/Card";
+import { Badge } from "../../components/common/Badge";
 import Icon from "../../components/common/Icon";
 import Avatar from "../../components/common/Avatar";
 import Button from "../../components/common/Button";
@@ -63,6 +64,16 @@ export default function AdminProjectMessagesPage() {
   const clientOption = project ? { userId: project.clientId, name: project.clientName } : null;
   const teamOptions = project?.team || [];
 
+  // The screen's whole purpose is to make this obvious: does the client see
+  // this thread or not. Derived straight from real participant data, not
+  // a separate "threadType" field the API doesn't send.
+  const activeConversation = conversations.find((c) => (c.id || c._id) === activeConversationId);
+  const isClientVisible = !!(
+    activeConversation &&
+    project?.clientId &&
+    activeConversation.participants?.some((p) => p.userId === project.clientId)
+  );
+
   return (
     <>
       <Topbar title="Messages" subtitle={project?.title} notificationsRoute={ROUTES.ADMIN.NOTIFICATIONS} />
@@ -88,18 +99,22 @@ export default function AdminProjectMessagesPage() {
               {conversations.map((c) => {
                 const cid = c.id || c._id;
                 const isActive = cid === activeConversationId;
+                const rowClientVisible = !!(project?.clientId && c.participants?.some((p) => p.userId === project.clientId));
                 return (
                   <button
                     key={cid}
                     onClick={() => setSelectedConversationId(cid)}
                     className="w-full text-left px-4 py-3 flex items-center gap-2.5 border-b border-(--color-border) last:border-0"
-                    style={{ background: isActive ? "var(--color-bg)" : "transparent" }}
+                    style={{
+                      background: isActive ? "var(--color-bg)" : "transparent",
+                      borderLeft: isActive ? "3px solid var(--color-portal-primary)" : "3px solid transparent",
+                    }}
                   >
                     <Avatar initials={c.name.slice(0, 2).toUpperCase()} size="sm" tone={c.isDefault ? "portal" : "neutral"} />
-                    <div className="min-w-0">
+                    <div className="min-w-0 flex-1">
                       <div className="text-sm font-semibold text-(--color-text-primary) truncate">{c.name}</div>
                       <div className="text-[11px] text-(--color-text-secondary)">
-                        {c.participants?.length || 0} members
+                        {c.participants?.length || 0} members{rowClientVisible ? " · client included" : ""}
                       </div>
                     </div>
                   </button>
@@ -108,9 +123,33 @@ export default function AdminProjectMessagesPage() {
             </div>
           </Card>
 
-          <Card padded={false} className="flex-1 flex flex-col">
-            {activeConversationId ? (
-              <MessageThread messages={messages} currentUserId={user?.id} onSend={handleSend} isSending={isSending} />
+          <Card padded={false} className="flex-1 flex flex-col min-h-0">
+            {activeConversationId && activeConversation ? (
+              <>
+                <div className="flex items-center justify-between gap-3 px-5 py-3.5 border-b border-(--color-border) flex-shrink-0">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <Avatar
+                      initials={activeConversation.name.slice(0, 2).toUpperCase()}
+                      size="sm"
+                      tone={activeConversation.isDefault ? "portal" : "neutral"}
+                    />
+                    <div className="min-w-0">
+                      <div className="text-sm font-semibold text-(--color-text-primary) truncate">
+                        {activeConversation.name}
+                      </div>
+                      <div className="text-xs text-(--color-text-secondary) truncate">
+                        {isClientVisible ? "Visible to the client portal" : "Internal — not visible to the client"}
+                      </div>
+                    </div>
+                  </div>
+                  <Badge variant={isClientVisible ? "success" : "neutral"}>
+                    {isClientVisible ? "External thread" : "Internal thread"}
+                  </Badge>
+                </div>
+                <div className="flex-1 min-h-0">
+                  <MessageThread messages={messages} currentUserId={user?.id} onSend={handleSend} isSending={isSending} />
+                </div>
+              </>
             ) : (
               <div className="flex-1 flex items-center justify-center text-sm text-(--color-text-secondary)">
                 Select a group chat
@@ -137,6 +176,10 @@ export default function AdminProjectMessagesPage() {
           <Input label="Group name" placeholder="e.g. Design Review" {...register("name", { required: true })} />
           <div>
             <label className="block text-xs font-semibold text-(--color-text-secondary) mb-1.5">Members</label>
+            <p className="text-xs text-(--color-text-secondary) mb-2 leading-relaxed">
+              Everyone checked below can read this thread. Include the client only if it should be
+              visible in their portal — leave them out to keep this internal.
+            </p>
             <div className="flex flex-col gap-2 max-h-48 overflow-y-auto border border-(--color-border) rounded-(--radius-md) p-3">
               {clientOption && (
                 <label className="flex items-center gap-2 text-sm">
