@@ -2,8 +2,8 @@ import axios from "axios";
 
 // In production this points at the real API. For now USE_MOCKS short-circuits
 // every service call before it leaves the browser (see services/mockAdapter.js).
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api/v1";
-export const USE_MOCKS = import.meta.env.VITE_USE_MOCKS !== "false"; // default true
+export const API_BASE_URL = "https://vaidprojectmanagment.onrender.com/api/v1";
+export const USE_MOCKS = false;
 
 export const STORAGE_TOKEN_KEY = "archpro_access_token";
 export const STORAGE_REFRESH_KEY = "archpro_refresh_token";

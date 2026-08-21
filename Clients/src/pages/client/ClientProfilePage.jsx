@@ -93,8 +93,7 @@ export default function ClientProfilePage() {
       // A bare edit here must never silently swap it out from under the
       // client, so the new email is saved server-side but excluded from the
       // local session merge until it's verified.
-      const { email: _newEmail, ...confirmedFields } = updated;
-      dispatch(updateLocalUser(confirmedFields));
+      dispatch(updateLocalUser({ name: updated.name, phone: updated.phone }));
       dispatch(
         pushToast(
           emailChanged
