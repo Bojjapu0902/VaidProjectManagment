@@ -1,0 +1,558 @@
+{
+    "landscape": [
+        {
+            "title": "APARTMENTS",
+            "number": "01",
+            "img": "images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_01.webp",
+            "link": "pages/landscape/apartments.html",
+            "visible": true
+        },
+        {
+            "title": "COMMERCIAL",
+            "number": "02",
+            "img": "images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_01.webp",
+            "link": "pages/landscape/commercial.html",
+            "visible": true
+        },
+        {
+            "title": "FARM HOUSE",
+            "number": "03",
+            "img": "images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_01.webp",
+            "link": "pages/landscape/farm-house.html",
+            "visible": true
+        },
+        {
+            "title": "GATED COMMUNITY",
+            "number": "04",
+            "img": "images/projects/landscape/GatedCommunity/ARDVILLAS/wm/Landscape_GatedCommunity_ARDVILLAS_01.webp",
+            "link": "pages/landscape/gated-community.html",
+            "visible": true
+        },
+        {
+            "title": "HOSPITAL",
+            "number": "05",
+            "img": "images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_01.webp",
+            "link": "pages/landscape/hospital.html",
+            "visible": true
+        },
+        {
+            "title": "INDUSTRIAL",
+            "number": "06",
+            "img": "images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_01.webp",
+            "link": "pages/landscape/industrial.html",
+            "visible": true
+        },
+        {
+            "title": "INSTITUTION",
+            "number": "07",
+            "img": "images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_01.webp",
+            "link": "pages/landscape/institution.html",
+            "visible": true
+        },
+        {
+            "title": "RESTAURANT",
+            "number": "08",
+            "img": "images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_01.webp",
+            "link": "pages/landscape/restaurant.html",
+            "visible": true
+        },
+        {
+            "title": "SPORTS",
+            "number": "09",
+            "img": "images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_01.webp",
+            "link": "pages/landscape/sports.html",
+            "visible": true
+        }
+    ],
+    "apartments": [
+        {
+            "id": "BDA",
+            "title": "BDA",
+            "location": "Anekal& Lingapura",
+            "siteArea": "50 Acre",
+            "Type": "High Rise Apartment Landscape",
+            "img": "../../images/projects/landscape/Apartments/BDA/Landscape_Apartments_BDA_01.webp",
+            "description": "Located in Anekal & Lingapura, Bangalore, the BDA Apartment Landscape is a 50-acre high-rise residential landscape project designed by VAID Architects to create a vibrant, sustainable, and people-centric outdoor environment that complements modern apartment living. The landscape master plan seamlessly integrates lush green spaces, pedestrian-friendly pathways, recreational parks, children's play areas, fitness zones, senior citizen seating courts, water features, and community gathering spaces to encourage wellness and social interaction. Native plantations, shaded walkways, rainwater-sensitive landscape planning, and climate-responsive design strategies enhance environmental sustainability while improving the overall quality of life for residents. Every outdoor space is carefully planned to balance aesthetics, functionality, safety, and long-term maintenance, transforming the development into a healthy and engaging residential community. The landscape design strengthens the connection between architecture and nature, creating an inviting environment that supports recreation, relaxation, and everyday living. This project showcases VAID Architects' expertise in apartment landscape design, high-rise residential landscape architecture, gated community landscape planning, master planning, sustainable landscape architecture, urban open space design, amenity landscape development, and residential community landscape design, delivering outdoor environments that enhance lifestyle, environmental performance, and long-term community value.",
+            "gallery": [
+                "../../images/projects/landscape/Apartments/BDA/Landscape_Apartments_BDA_01.webp",
+                "../../images/projects/landscape/Apartments/BDA/Landscape_Apartments_BDA_02.webp",
+                "../../images/projects/landscape/Apartments/BDA/Landscape_Apartments_BDA_03.webp",
+                "../../images/projects/landscape/Apartments/BDA/Landscape_Apartments_BDA_04.webp",
+                "../../images/projects/landscape/Apartments/BDA/Landscape_Apartments_BDA_05.webp",
+                "../../images/projects/landscape/Apartments/BDA/Landscape_Apartments_BDA_06.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "epitome",
+            "title": "Epitome",
+            "location": "Nandhyala",
+            "siteArea": "2000 SQ.M",
+            "Type": "Roof Top Landscape",
+            "img": "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_01.webp",
+            "description": "Located in Nandyal, Epitome is a 2,000 sq.m. rooftop landscape project designed by VAID Architects to transform underutilized terrace space into a vibrant outdoor destination that enhances lifestyle, wellness, and community interaction. The rooftop landscape seamlessly integrates lush planting, shaded seating areas, walking paths, recreational zones, outdoor lounges, and thoughtfully curated green spaces to create a refreshing urban retreat above the city. The design emphasizes sustainable landscape architecture through the use of climate-responsive planting, efficient irrigation systems, durable materials, and low-maintenance landscaping that ensures long-term performance. Every element is carefully planned to maximize panoramic views, natural ventilation, and user comfort while providing flexible spaces for relaxation, social gatherings, and leisure activities. The harmonious balance between architecture and nature creates a serene environment that elevates the overall value and appeal of the development. This project showcases VAID Architects' expertise in rooftop landscape design, terrace garden design, urban landscape architecture, green roof planning, sustainable landscape design, amenity landscape development, commercial rooftop landscaping, and outdoor recreational space planning, delivering innovative green environments that enrich everyday living and promote sustainable urban development.",
+            "gallery": [
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_01.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_02.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_03.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_04.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_05.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_06.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_07.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_08.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_09.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_10.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_11.webp",
+                "../../images/projects/landscape/Apartments/Nandyal/wm/Landscape_Apartments_Nandyal_12.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Royal",
+            "title": "Royal",
+            "location": "Vizag",
+            "siteArea": "1 Acre",
+            "Type": "Roof Top Landscape",
+            "img": "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_01.webp",
+            "description": "Located in Visakhapatnam, Royal is a 1-acre rooftop landscape project designed by VAID Architects to transform elevated spaces into vibrant green environments that enhance urban living and create memorable outdoor experiences. The rooftop landscape is thoughtfully planned with lush gardens, shaded seating areas, sky lounges, walking trails, recreational zones, and elegant gathering spaces that encourage relaxation, wellness, and community interaction. The design combines contemporary landscape architecture with sustainable planning, incorporating climate-responsive planting, efficient irrigation systems, permeable surfaces, and low-maintenance greenery to ensure long-term environmental performance. Carefully selected hardscape elements, ambient lighting, water features, and panoramic viewpoints create an inviting atmosphere while maximizing the usability of the rooftop throughout the day. Every space is designed to seamlessly blend functionality, aesthetics, and nature, adding significant value to the development and enriching the lifestyle of its users. This project showcases VAID Architects' expertise in rooftop landscape design, terrace garden design, urban landscape architecture, green roof planning, sustainable landscape design, luxury rooftop amenities, commercial and residential landscape architecture, and outdoor recreational space planning, delivering innovative landscapes that elevate modern living through nature and design.",
+            "gallery": [
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_01.webp",
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_02.webp",
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_03.webp",
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_04.webp",
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_05.webp",
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_06.webp",
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_07.webp",
+                "../../images/projects/landscape/Apartments/Royal/wm/Landscape_Apartments_Royal_08.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "commercial": [
+        {
+            "id": "Satya",
+            "title": "Satya",
+            "location": "Gopanapalle",
+            "siteArea": "1.2 Acres",
+            "Type": "Hardscape Style",
+            "img": "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_01.webp",
+            "description": "Located in Gopanapalle, Satya is a 1.2-acre commercial landscape project designed by VAID Architects with a contemporary hardscape-focused design that enhances the functionality, aesthetics, and identity of the commercial development. The landscape master plan integrates premium paving, plazas, pedestrian walkways, arrival courts, feature walls, seating zones, water elements, and strategically placed softscape to create an inviting and professional outdoor environment. The design emphasizes clean geometry, durable materials, and seamless circulation, ensuring efficient movement for visitors while reinforcing the architectural character of the project. Carefully planned lighting, shaded gathering spaces, and low-maintenance planting complement the hardscape elements, delivering a balanced landscape that is both visually striking and operationally efficient. Every outdoor space is designed to improve user experience, strengthen the property's commercial appeal, and provide long-term sustainability with minimal maintenance requirements. This project showcases VAID Architects' expertise in commercial landscape architecture, hardscape design, urban plaza design, commercial landscape planning, office campus landscape, public realm design, sustainable landscape architecture, and premium outdoor space planning, delivering modern commercial environments that combine functionality, durability, and timeless visual appeal.",
+            "gallery": [
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_01.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_02.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_03.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_04.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_05.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_06.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_07.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_08.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_09.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_10.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_11.webp",
+                "../../images/projects/landscape/Commercial/Satya/wm/Landscape_Commercial_Satya_12.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Rohit",
+            "title": "Rohit",
+            "location": "Gopanapalle",
+            "siteArea": "1.2 Acres",
+            "Type": "Commercial Building Landscape",
+            "img": "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_01.webp",
+            "description": "Located in Gopanapalle, Rohit is a 1.2-acre commercial building landscape project designed by VAID Architects to create an elegant, functional, and sustainable outdoor environment that enhances the identity and value of the commercial development. The landscape design seamlessly integrates welcoming entrance plazas, landscaped arrival courts, pedestrian walkways, shaded seating areas, green buffers, feature planting, and thoughtfully designed outdoor gathering spaces that improve the overall user experience. A balanced combination of softscape and hardscape elements creates a visually appealing environment while ensuring smooth circulation, accessibility, and long-term durability. Native planting, climate-responsive landscape strategies, energy-efficient lighting, and low-maintenance materials contribute to a sustainable and environmentally responsible design. Every outdoor space is carefully planned to complement the building's contemporary architecture while providing a comfortable and engaging setting for employees, visitors, and clients. This project showcases VAID Architects' expertise in commercial landscape architecture, office campus landscape design, commercial building landscape planning, urban landscape design, sustainable landscape architecture, hardscape and softscape integration, public space design, and premium outdoor environment planning, delivering high-quality landscapes that enhance functionality, aesthetics, and long-term commercial value.",
+            "gallery": [
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_01.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_02.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_03.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_04.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_05.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_06.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_07.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_08.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_09.webp",
+                "../../images/projects/landscape/Commercial/rohit/wm/Landscape_Commercial_rohit_10.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "farm-house": [
+        {
+            "id": "Daya",
+            "title": "Daya ",
+            "location": "Keesaragutta",
+            "siteArea": "5694 Sft",
+            "Type": "Manduva Style",
+            "img": "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_01.webp",
+            "description": "Located in Keesaragutta, Daya is a 5,694 sq.ft. farmhouse landscape project designed by VAID Architects in a timeless Manduva-style setting that celebrates the harmony between traditional architecture and natural surroundings. Inspired by the essence of heritage courtyard homes, the landscape is thoughtfully planned with lush gardens, stone pathways, native plantations, shaded sit-outs, water elements, and open gathering spaces that create a peaceful and immersive outdoor experience. The design emphasizes a seamless connection between the built environment and nature, enhancing ventilation, natural light, and visual continuity throughout the property. Locally sourced materials, sustainable planting strategies, and low-maintenance landscape elements preserve the authentic character of the farmhouse while ensuring long-term environmental performance. Every outdoor space is carefully crafted to promote relaxation, cultural richness, and everyday living in a tranquil natural setting. This project showcases VAID Architects' expertise in farmhouse landscape design, Manduva-style landscape architecture, traditional landscape planning, heritage-inspired outdoor design, sustainable landscape architecture, courtyard landscape design, luxury farmhouse landscapes, and nature-integrated outdoor environments, delivering timeless landscapes that blend tradition, sustainability, and contemporary lifestyle.",
+            "gallery": [
+                "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_01.webp",
+                "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_02.webp",
+                "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_03.webp",
+                "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_04.webp",
+                "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_05.webp",
+                "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_06.webp",
+                "../../images/projects/landscape/FarmHouse/Daya/wm/Landscape_FARMhOUSE_DAYA_07.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "NandaKishoreFarmHouse",
+            "title": "Nanda Kishore ",
+            "location": "Hyderabad",
+            "siteArea": "1 Acre",
+            "Type": "Mondern Style ",
+            "img": "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_01.webp",
+            "description": "Located in Hyderabad, Nanda Kishore is a 1-acre modern farmhouse landscape project designed by VAID Architects to create a refined outdoor environment that seamlessly blends contemporary aesthetics with the tranquility of nature. The landscape master plan features expansive lawns, elegant pathways, curated plantations, outdoor lounges, water features, shaded seating areas, and recreational spaces that encourage relaxation and outdoor living. Every element is carefully positioned to strengthen the connection between the farmhouse and its natural surroundings while enhancing circulation, privacy, and visual appeal. The design incorporates climate-responsive planting, sustainable irrigation systems, native vegetation, and durable landscape materials to ensure long-term environmental performance with minimal maintenance. A harmonious balance of softscape and hardscape creates sophisticated outdoor spaces that complement the modern architectural language while providing year-round comfort and functionality. This project showcases VAID Architects' expertise in farmhouse landscape design, modern landscape architecture, luxury farmhouse landscapes, residential landscape planning, sustainable landscape architecture, garden design, outdoor living space design, hardscape and softscape integration, and nature-inspired landscape planning, delivering elegant outdoor environments that combine contemporary design, sustainability, and timeless living experiences.",
+            "gallery": [
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_01.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_02.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_03.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_04.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_05.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_06.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_07.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_08.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_09.webp",
+                "../../images/projects/landscape/FarmHouse/NandaKishoreFarmHouse/wm/Landscape_FARMhOUSE_NandaKishoreFarmHouse_10.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "PrakashManduwa",
+            "title": "Prakash",
+            "location": "North Carolina,USA",
+            "siteArea": "50 Acres",
+            "Type": "Manduva Style",
+            "img": "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_01.webp",
+            "description": "Located in North Carolina, USA, Prakash is a 50-acre Manduva-style farmhouse landscape project designed by VAID Architects to reinterpret the timeless charm of traditional Indian courtyard living within a vast natural setting. The landscape master plan celebrates the seamless relationship between architecture and nature through expansive lawns, native woodlands, landscaped courtyards, water features, stone pathways, orchards, and tranquil outdoor gathering spaces. Inspired by the heritage of the Manduva house, the design enhances natural ventilation, daylight, and spatial harmony while creating a serene environment for recreation, wellness, and family living. Sustainable landscape strategies, including native planting, efficient water management, ecological preservation, and low-maintenance materials, ensure long-term environmental performance while respecting the site's natural character. Every outdoor space is thoughtfully designed to offer panoramic views, privacy, and a deep connection with the surrounding landscape, creating a timeless countryside retreat. This project showcases VAID Architects' expertise in farmhouse landscape design, Manduva-style landscape architecture, luxury estate landscape planning, traditional courtyard landscape design, sustainable landscape architecture, ecological landscape planning, large-scale residential landscape design, and nature-integrated outdoor environments, delivering heritage-inspired landscapes that blend cultural authenticity, sustainability, and contemporary living.",
+            "gallery": [
+                "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_01.webp",
+                "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_02.webp",
+                "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_03.webp",
+                "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_04.webp",
+                "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_05.webp",
+                "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_06.webp",
+                "../../images/projects/landscape/FarmHouse/PrakashManduwa/wm/Landscape_FARMhOUSE_PrakashManduwa_07.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "gated-community": [
+        {
+            "id": "ARD Villas",
+            "title": "ARD Villas",
+            "location": "Kukatpally",
+            "siteArea": "7 Acres",
+            "Type": "Gated Community Villas",
+            "img": "../../images/projects/landscape/GatedCommunity/ARDVILLAS/wm/Landscape_GatedCommunity_ARDVILLAS_01.webp",
+            "description": "Located in Kukatpally, ARD Villas is a 7-acre gated community landscape project designed by VAID Architects to create a premium residential environment where architecture, open spaces, and nature exist in perfect harmony. The landscape master plan features grand entrance avenues, tree-lined internal roads, landscaped parks, pedestrian-friendly pathways, children's play areas, community plazas, water features, and thoughtfully designed recreational spaces that encourage social interaction and healthy living. Every outdoor space is carefully planned to enhance connectivity, safety, and accessibility while providing residents with a serene and visually engaging environment. Native plantations, climate-responsive landscape strategies, efficient irrigation systems, and sustainable materials ensure long-term environmental performance with minimal maintenance. The landscape complements the contemporary villa architecture, creating a cohesive community that promotes wellness, privacy, and an elevated lifestyle. This project showcases VAID Architects' expertise in gated community landscape architecture, villa community landscape design, landscape master planning, residential township landscape, clubhouse landscape design, sustainable landscape architecture, urban open space planning, green infrastructure, and luxury residential landscape design, delivering vibrant outdoor environments that enhance community living, ecological sustainability, and long-term property value.",
+            "gallery": [
+                "../../images/projects/landscape/GatedCommunity/ARDVILLAS/wm/Landscape_GatedCommunity_ARDVILLAS_01.webp",
+                "../../images/projects/landscape/GatedCommunity/ARDVILLAS/wm/Landscape_GatedCommunity_ARDVILLAS_02.webp",
+                "../../images/projects/landscape/GatedCommunity/ARDVILLAS/wm/Landscape_GatedCommunity_ARDVILLAS_03.webp",
+                "../../images/projects/landscape/GatedCommunity/ARDVILLAS/wm/Landscape_GatedCommunity_ARDVILLAS_04.webp",
+                "../../images/projects/landscape/GatedCommunity/ARDVILLAS/wm/Landscape_GatedCommunity_ARDVILLAS_05.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "IMark",
+            "title": "IMark",
+            "location": "Vikarabad",
+            "siteArea": "25 Acres",
+            "Type": "Gated Community Villas",
+            "img": "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_01.webp",
+            "description": "Located in Vikarabad, IMark is a 25-acre gated community landscape project designed by VAID Architects to create a vibrant, sustainable, and nature-centric residential environment. The landscape master plan integrates expansive green corridors, tree-lined boulevards, neighborhood parks, pedestrian promenades, cycling tracks, children's play areas, clubhouse surroundings, water features, and recreational open spaces that encourage community interaction and healthy outdoor living. The design emphasizes seamless connectivity between villas, amenities, and landscaped zones while preserving the site's natural character and enhancing biodiversity. Climate-responsive planting, native tree species, efficient irrigation systems, rainwater management, and durable hardscape materials contribute to a sustainable landscape with low maintenance requirements. Every outdoor space is thoughtfully designed to provide visual harmony, privacy, safety, and year-round comfort, creating a premium lifestyle experience for residents. This project showcases VAID Architects' expertise in gated community landscape architecture, villa township landscape design, landscape master planning, luxury residential landscape design, sustainable landscape architecture, urban green infrastructure, clubhouse landscape planning, open space design, and community-focused outdoor environments, delivering world-class landscapes that enhance wellness, environmental sustainability, and long-term residential value.",
+            "gallery": [
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_01.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_02.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_03.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_04.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_05.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_06.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_07.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_08.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_09.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_11.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_12.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_13.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_14.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_15.webp",
+                "../../images/projects/landscape/GatedCommunity/imark/wm/Landscape_GatedCommunity_IMARK_16.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "hospital": [
+        {
+            "id": "Omprakash",
+            "title": "Om prakash",
+            "location": "SangaReddy",
+            "siteArea": "5000 Sqm",
+            "Type": "50 Bedded Hospital",
+            "img": "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_01.webp",
+            "description": "Located in Sangareddy, Om Prakash is a 5,000 sq.m hospital landscape project designed by VAID Architects for a 50-bedded healthcare facility, creating a healing environment that enhances patient well-being, visitor comfort, and operational efficiency. The landscape master plan integrates welcoming entrance plazas, shaded pedestrian pathways, therapeutic gardens, healing courtyards, waiting areas, green buffers, and carefully planned outdoor spaces that promote relaxation and stress reduction. The design prioritizes barrier-free accessibility, intuitive circulation, and seamless connectivity between hospital departments while providing a calm and restorative atmosphere for patients, healthcare professionals, and visitors. Native planting, climate-responsive landscaping, rainwater management, and low-maintenance materials contribute to a sustainable and environmentally responsible healthcare campus. Natural greenery and thoughtfully designed open spaces improve air quality, enhance visual comfort, and support the overall healing experience. This project showcases VAID Architects' expertise in hospital landscape architecture, healthcare landscape design, healing garden planning, medical campus landscape, therapeutic outdoor environments, sustainable landscape architecture, accessible landscape planning, green infrastructure, and healthcare campus master planning, delivering restorative landscapes that improve patient experience, wellness, and long-term environmental sustainability.",
+            "gallery": [
+                "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_01.webp",
+                "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_02.webp",
+                "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_03.webp",
+                "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_04.webp",
+                "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_05.webp",
+                "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_06.webp",
+                "../../images/projects/landscape/Hospital/om/wm/Landscape_Hospital_om_07.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "City",
+            "title": "City",
+            "location": "SangaReddy",
+            "siteArea": "1 Acres",
+            "Type": "Hospital",
+            "img": "../../images/projects/landscape/Hospital/city/wm/Landscape_Hospital_city_01.webp",
+           "description": "Located in Sangareddy, City Hospital is a thoughtfully designed hospital project spread across 1 acre, created to provide efficient, patient-focused healthcare in a modern and welcoming environment. The architectural design emphasizes functional planning, streamlined clinical workflows, and comfortable healing spaces while ensuring operational efficiency for healthcare professionals. The facility is planned with well-organized outpatient departments, consultation rooms, diagnostic services, emergency care, inpatient wards, and support facilities, allowing for seamless movement of patients, staff, and visitors. The design prioritizes natural daylight, cross ventilation, accessibility, infection control, and sustainable building practices to enhance patient well-being and create a healthier indoor environment. With a contemporary architectural approach and future-ready infrastructure, City Hospital reflects VAID Architects' expertise in hospital architecture, healthcare facility planning, institutional architecture, medical infrastructure design, sustainable healthcare buildings, and patient-centric design, delivering healthcare spaces that balance functionality, efficiency, and architectural excellence.",
+            "gallery": [
+                "../../images/projects/landscape/Hospital/city/wm/Landscape_Hospital_city_01.webp",
+                "../../images/projects/landscape/Hospital/city/wm/Landscape_Hospital_city_02.webp",
+                "../../images/projects/landscape/Hospital/city/wm/Landscape_Hospital_city_03.webp",
+                "../../images/projects/landscape/Hospital/city/wm/Landscape_Hospital_city_04.webp",
+                "../../images/projects/landscape/Hospital/city/wm/Landscape_Hospital_city_05.webp",
+                "../../images/projects/landscape/Hospital/city/wm/Landscape_Hospital_city_06.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "Industrial": [
+        {
+            "id": "ccl",
+            "title": "ccl",
+            "location": "Duggirela",
+            "siteArea": "100 Acres",
+            "Type": "Softscape Style",
+            "img": "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_01.webp",
+            "description": "Located in Duggirela, CCL is a 100-acre industrial landscape project designed by VAID Architects with a softscape-focused landscape strategy that transforms a large industrial campus into a sustainable, environmentally responsible, and employee-friendly workplace. The landscape master plan incorporates extensive green belts, avenue plantations, shaded pedestrian walkways, buffer zones, rain gardens, open lawns, biodiversity pockets, and recreational outdoor spaces that improve the visual character of the industrial environment while enhancing ecological performance. The design promotes seamless circulation between production facilities, administrative buildings, and common amenities, creating a healthy and comfortable environment for employees and visitors. Native tree species, climate-responsive planting, efficient irrigation systems, stormwater management, and low-maintenance landscaping ensure long-term sustainability while reducing environmental impact. The integration of expansive softscape areas improves microclimate conditions, enhances air quality, reduces heat gain, and contributes to a greener industrial ecosystem. This project showcases VAID Architects' expertise in industrial landscape architecture, industrial campus landscape design, softscape landscape planning, industrial green infrastructure, sustainable landscape architecture, office campus landscape, ecological landscape design, environmental master planning, and large-scale industrial landscape development, delivering high-performance outdoor environments that combine sustainability, functionality, and long-term environmental resilience.",
+            "gallery": [
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_01.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_02.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_03.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_04.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_05.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_06.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_07.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_08.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_09.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_11.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_12.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_13.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_14.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_15.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_16.webp",
+                "../../images/projects/landscape/Industrial/ccl/wm/Landscape_Industrial_ccl_17.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Ichor",
+            "title": "Ichor",
+            "location": "Turkapally",
+            "siteArea": "10.7 Acres",
+            "Type": "Admin block",
+            "img": "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_01.webp",
+            "description": "Located in Turkapally, ICHOR is a 10.7-acre industrial landscape project designed by VAID Architects for the administration block of a modern industrial campus. The landscape master plan creates a welcoming and professional environment by integrating landscaped entrance plazas, shaded pedestrian walkways, executive gardens, green courtyards, water features, seating zones, and tree-lined avenues that enhance both functionality and visual identity. The design establishes a seamless connection between the administration building and the surrounding industrial facilities, providing employees and visitors with comfortable outdoor spaces for interaction, relaxation, and movement. Climate-responsive planting, native vegetation, sustainable irrigation systems, rainwater management, and low-maintenance landscape materials contribute to long-term environmental performance while improving the campus microclimate. The thoughtful balance of softscape and hardscape strengthens the corporate character of the campus while promoting employee well-being and ecological sustainability. This project showcases VAID Architects' expertise in industrial landscape architecture, administrative campus landscape design, office campus landscape planning, industrial green infrastructure, commercial landscape architecture, sustainable landscape architecture, corporate outdoor space design, ecological landscape planning, and industrial campus master planning, delivering functional and aesthetically refined landscapes that enhance productivity, sustainability, and the overall workplace experience.",
+            "gallery": [
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_01.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_02.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_01.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_02.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_03.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_04.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_05.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_06.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_07.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_08.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_09.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_11.webp",
+                "../../images/projects/landscape/Industrial/Ichor/wm/Landscape_Industrial_ichor_12.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "institution": [
+        {
+            "id": "Ish",
+            "title": "Ish",
+            "location": "Patancheru",
+            "siteArea": "1500 Sqm",
+            "Type": "PlayPark",
+            "img": "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_01.webp",
+            "description": "Located in Patancheru, ISH is a 1,500 sq.m institutional landscape project designed by VAID Architects, featuring a thoughtfully planned play park that encourages recreation, learning, and community interaction within an educational environment. The landscape design creates a safe, vibrant, and engaging outdoor space through interactive play zones, open lawns, shaded seating areas, walking paths, and nature-inspired activity spaces that support the physical, social, and cognitive development of children. The layout promotes seamless circulation, clear visibility, and barrier-free accessibility while integrating soft landscaping, colorful planting, and durable outdoor materials suited for high-activity environments. Climate-responsive planting, native vegetation, sustainable irrigation systems, and low-maintenance landscape solutions contribute to a healthy and environmentally responsible campus. The play park is designed to enhance student well-being while providing a welcoming recreational space for educators, parents, and visitors. This project showcases VAID Architects' expertise in institutional landscape architecture, educational campus landscape design, play park planning, school landscape architecture, children's recreational space design, sustainable landscape architecture, campus master planning, outdoor learning environments, and community-focused landscape design, delivering safe, inspiring, and functional outdoor spaces that foster education, recreation, and environmental sustainability.",
+            "gallery": [
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_01.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_02.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_03.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_04.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_05.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_06.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_07.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_08.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_09.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_11.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_12.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_13.webp",
+                "../../images/projects/landscape/Institutional/ish/wm/Landscape_Institutional_Ish_14.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Kalpataru",
+            "title": "Kalpataru",
+            "location": "chennai",
+            "siteArea": "10 Acres",
+            "Type": "Institutiona",
+            "img": "../../images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_01.webp",
+            "description": "Located in Chennai, Kalpataru is a 10-acre institutional landscape project designed by VAID Architects to create a sustainable, people-centric campus that fosters learning, collaboration, and overall well-being. The landscape master plan integrates grand entrance plazas, shaded pedestrian avenues, landscaped courtyards, interactive outdoor learning spaces, recreational lawns, gathering plazas, water features, and extensive green zones that enhance the campus experience. The design encourages seamless circulation between academic buildings, administrative blocks, and shared amenities while creating safe, accessible, and inspiring outdoor environments for students, faculty, and visitors. Climate-responsive planting, native vegetation, rainwater harvesting strategies, efficient irrigation systems, and durable hardscape materials contribute to a resilient and environmentally responsible campus. The harmonious integration of architecture and landscape creates vibrant public spaces that support education, social interaction, and wellness while strengthening the institution's identity. This project showcases VAID Architects' expertise in institutional landscape architecture, educational campus landscape design, campus master planning, sustainable landscape architecture, outdoor learning environments, public realm design, green infrastructure, ecological landscape planning, and large-scale institutional landscape development, delivering future-ready campuses that seamlessly combine functionality, sustainability, and exceptional user experience.",
+            "gallery": [
+                "../../images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_01.webp",
+                "../../images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_02.webp",
+                "../../images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_03.webp",
+                "../../images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_04.webp",
+                "../../images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_05.webp",
+                "../../images/projects/landscape/Institutional/Kalpataru/wm/Landscape_Institutional_Kalpataru_06.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "NelloreSchool",
+            "title": "Nellore School",
+            "location": "Nellore",
+            "siteArea": "25 Acres",
+            "Type": "Educational Block",
+            "img": "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_01.webp",
+            "description": "Located in Nellore, Nellore School is a 25-acre institutional landscape project designed by VAID Architects to create a dynamic educational campus that promotes learning, recreation, and holistic student development. The landscape master plan seamlessly integrates academic buildings with expansive green spaces, shaded walkways, landscaped courtyards, outdoor classrooms, sports zones, play areas, gathering plazas, and recreational lawns to foster an engaging and healthy learning environment. The design prioritizes safe pedestrian circulation, barrier-free accessibility, and strong visual connectivity between the educational block and outdoor amenities, encouraging collaboration and interaction throughout the campus. Climate-responsive planting, native vegetation, rainwater harvesting, sustainable irrigation systems, and environmentally responsible landscape solutions enhance the campus while minimizing long-term maintenance. Every outdoor space is thoughtfully planned to improve comfort, biodiversity, and environmental performance, creating an inspiring setting for students, faculty, and visitors alike. This project showcases VAID Architects' expertise in institutional landscape architecture, educational campus landscape design, school landscape planning, campus master planning, outdoor learning environments, sports and recreation landscape, sustainable landscape architecture, green infrastructure, and public realm design, delivering future-ready educational campuses that combine functionality, sustainability, and enriching outdoor experiences.",
+            "gallery": [
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_01.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_02.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_01.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_02.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_03.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_04.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_05.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_06.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_07.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_08.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_09.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_11.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_12.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_13.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_14.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_15.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_16.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_17.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_18.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_19.webp",
+                "../../images/projects/landscape/Institutional/NelloreSchool/wm/Landscape_Institutional_NelloreSchool_20.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "restaurant": [
+        {
+            "id": "Runway9",
+            "title": "Runway - 9",
+            "location": "Gajwel",
+            "siteArea": "2.5 Acres",
+            "Type": "Restaurant",
+            "img": "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_01.webp",
+            "description": "Located in Gajwel, Runway-9 is a 2.5-acre restaurant landscape project designed by VAID Architects to create a memorable dining destination where architecture, landscape, and hospitality come together in perfect harmony. The landscape master plan features grand arrival courts, lush gardens, shaded outdoor dining areas, water features, pedestrian pathways, recreational open spaces, and ambient seating zones that enhance the overall guest experience. Every outdoor space is thoughtfully designed to encourage relaxation, social interaction, and seamless movement between indoor and outdoor dining environments. Native plantations, climate-responsive landscaping, sustainable irrigation systems, and durable hardscape materials ensure long-term environmental performance while reducing maintenance requirements. Carefully curated lighting, greenery, and open spaces create an inviting atmosphere that transforms the restaurant into a destination for family gatherings, celebrations, and leisure. The landscape complements the architectural design while strengthening the identity of the hospitality development. This project showcases VAID Architects' expertise in restaurant landscape architecture, hospitality landscape design, commercial landscape architecture, outdoor dining landscape planning, sustainable landscape architecture, premium outdoor space planning, hardscape and softscape integration, green infrastructure, and hospitality master planning, delivering immersive outdoor environments that elevate dining experiences through thoughtful design, functionality, and natural beauty.",
+            "gallery": [
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_01.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_02.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_03.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_04.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_05.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_06.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_07.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_08.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_09.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_14.webp",
+                "../../images/projects/landscape/Restaurants/RUNWAY/wm/Landscape_Restaurents_Runway_15.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Krishna",
+            "title": "Krishna",
+            "location": "Gajwel",
+            "siteArea": "2.5 Acres",
+            "Type": "Restaurant",
+            "img": "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_01.webp",
+            "description": "Located in Gajwel, Krishna is a 2.5-acre restaurant landscape project designed by VAID Architects to deliver a premium outdoor hospitality experience through thoughtfully planned landscape architecture. The landscape design seamlessly integrates welcoming entrance plazas, lush green gardens, outdoor dining terraces, shaded seating areas, scenic walkways, water features, and recreational open spaces that create an inviting destination for families, visitors, and social gatherings. The master plan emphasizes smooth circulation, visual connectivity, and a harmonious relationship between the restaurant architecture and its natural surroundings, ensuring every outdoor space enhances the overall dining experience. Native plantations, climate-responsive landscape planning, sustainable irrigation systems, and durable hardscape materials contribute to environmental sustainability while minimizing long-term maintenance. Carefully curated lighting, greenery, and open spaces establish a relaxing ambiance that transitions effortlessly from daytime dining to vibrant evening experiences. This project showcases VAID Architects' expertise in restaurant landscape architecture, hospitality landscape design, commercial landscape architecture, outdoor dining landscape planning, premium outdoor space planning, sustainable landscape architecture, hardscape and softscape integration, green infrastructure, and hospitality master planning, creating immersive landscapes that enhance guest comfort, strengthen brand identity, and deliver memorable hospitality experiences.",
+            "gallery": [
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_01.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_02.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_01.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_02.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_03.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_04.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_05.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_06.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_07.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_08.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_09.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_10.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_11.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_12.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_13.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_14.webp",
+                "../../images/projects/landscape/Restaurants/Krishna/wm/Landscape_Restaurants_krishna_15.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "sports": [
+        {
+            "id": "SupremeSports",
+            "title": "Supreme",
+            "location": "Gachibowli",
+            "siteArea": "3 Acres",
+            "Type": "Sports block",
+            "img": "../../images/projects/landscape/Sports/SupremeSports/wm/Landscape_sUPREMESPORTS_01.webp",
+            "description": "Located in Gachibowli, Supreme is a 3-acre sports landscape project designed by VAID Architects to create a vibrant and high-performance outdoor environment that promotes fitness, recreation, and community engagement. The landscape master plan integrates professionally planned sports courts, open recreational lawns, jogging and walking tracks, shaded spectator seating, landscaped plazas, fitness zones, and green gathering spaces to provide a holistic sporting experience for athletes and visitors alike. The design emphasizes seamless circulation, barrier-free accessibility, and strong visual connectivity between the sports block and surrounding outdoor amenities, ensuring functionality and user comfort throughout the campus. Native plantations, climate-responsive landscaping, sustainable irrigation systems, rainwater management, and durable hardscape materials contribute to long-term environmental sustainability while minimizing maintenance requirements. Carefully designed green buffers and open spaces enhance the microclimate, creating comfortable outdoor environments suitable for year-round activities. This project showcases VAID Architects' expertise in sports landscape architecture, sports campus landscape design, recreational landscape planning, institutional landscape architecture, outdoor sports facility planning, campus master planning, green infrastructure, sustainable landscape architecture, and public realm design, delivering dynamic outdoor environments that inspire athletic excellence, wellness, and community interaction.",
+            "gallery": [
+                "../../images/projects/landscape/Sports/SupremeSports/wm/Landscape_sUPREMESPORTS_01.webp",
+                "../../images/projects/landscape/Sports/SupremeSports/wm/Landscape_sUPREMESPORTS_02.webp",
+                "../../images/projects/landscape/Sports/SupremeSports/wm/Landscape_sUPREMESPORTS_03.webp",
+                "../../images/projects/landscape/Sports/SupremeSports/wm/Landscape_sUPREMESPORTS_04.webp",
+                "../../images/projects/landscape/Sports/SupremeSports/wm/Landscape_sUPREMESPORTS_05.webp",
+                "../../images/projects/landscape/Sports/SupremeSports/wm/Landscape_sUPREMESPORTS_06.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "AIMS",
+            "title": "AIMS",
+            "location": "Banglore",
+            "siteArea": "4 Acres",
+            "Type": "Sports block",
+            "img": "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_01.webp",
+            "description": "Located in Bangalore, AIMS is a 4-acre sports landscape project designed by VAID Architects to create a dynamic and future-ready outdoor environment that promotes athletic excellence, recreation, and community engagement. The landscape master plan seamlessly integrates sports courts, training areas, jogging tracks, landscaped plazas, open recreational lawns, spectator seating, shaded walkways, fitness zones, and green gathering spaces to support a wide range of sporting and wellness activities. The design prioritizes efficient circulation, barrier-free accessibility, and strong connectivity between the sports block and surrounding campus facilities, creating a safe, functional, and enjoyable experience for athletes, students, coaches, and visitors. Climate-responsive planting, native vegetation, sustainable irrigation systems, rainwater management, and durable hardscape materials contribute to environmental sustainability while enhancing the campus microclimate and reducing long-term maintenance. Carefully planned green spaces encourage relaxation, social interaction, and outdoor learning, complementing the institution's active lifestyle. This project showcases VAID Architects' expertise in sports landscape architecture, sports campus landscape design, institutional landscape architecture, recreational landscape planning, outdoor sports facility planning, campus master planning, green infrastructure, sustainable landscape architecture, and public realm design, delivering inspiring outdoor environments that support performance, wellness, and long-term campus development.",
+            "gallery": [
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_01.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_02.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_03.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_04.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_05.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_06.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_07.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_08.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_09.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_10.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_11.webp",
+                "../../images/projects/landscape/Sports/AIMS/wm/Landscape_AIMS_12.webp"
+                
+            ],
+            "visible": true
+        }
+    ]
+}

@@ -1,0 +1,448 @@
+{
+    "interiors": [
+        {
+            "title": "APARTMENTS",
+            "number": "01",
+            "img": "images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_1.webp",
+            "link": "pages/interirors/apartments.html",
+            "visible": true
+        },
+        {
+            "title": "COMMERCIAL",
+            "number": "02",
+            "img": "images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_01.webp",
+            "link": "pages/interirors/commercial.html",
+            "visible": true
+        },
+        
+        {
+            "title": "FARM HOUSE",
+            "number": "03",
+            "img": "images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_1.webp",
+            "link": "pages/interirors/farm-house.html",
+            "visible": true
+        },
+        {
+            "title": "HOSPITAL",
+            "number": "04",
+            "img": "images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_01.webp",
+            "link": "pages/interirors/hospital.html",
+            "visible": true
+        },
+        {
+            "title": "INDUSTRIAL",
+            "number": "05",
+            "img": "images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_1.webp",
+            "link": "pages/interirors/industrial.html",
+            "visible": true
+        },
+        {
+            "title": "INSTITUTION",
+            "number": "06",
+            "img": "images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_01.webp",
+            "link": "pages/interirors/institution.html",
+            "visible": true
+        },
+        {
+            "title": "RESTAURANT",
+            "number": "07",
+            "img": "images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_1.webp",
+            "link": "pages/interirors/restaurant.html",
+            "visible": true
+        },
+        {
+            "title": "SPORTS",
+            "number": "08",
+            "img": "images/projects/interirors/sports/Ayra/wm/Interiors_sports_ayra_1.webp",
+            "link": "pages/interirors/sports.html",
+            "visible": true
+        },
+        {
+            "title": "VILLA",
+            "number": "09",
+            "img": "images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_1.webp",
+            "link": "pages/interirors/villa.html",
+            "visible": true
+        }
+    ],
+    "apartments": [
+        {
+            "id": "AURO",
+            "title": "AURO",
+            "location": "Narsingh",
+            "siteArea": "3000 Sft",
+            "Type": "Luxuary Contemporary",
+            "img": "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_1.webp",
+            "description": "Located in Narsingi, AURO is a 3,000 sq.ft. luxury contemporary apartment interior designed by VAID Architects to deliver a refined living experience that seamlessly blends elegance, comfort, and functionality. Every space is thoughtfully curated with premium materials, bespoke furniture, sophisticated lighting, and a timeless contemporary aesthetic that reflects the lifestyle and aspirations of modern homeowners. The interior design emphasizes open planning, optimized space utilization, seamless circulation, and abundant natural light to create bright, spacious, and inviting living environments. Carefully crafted living areas, luxurious bedrooms, designer kitchens, elegant dining spaces, and customized storage solutions ensure a perfect balance between aesthetics and everyday practicality. High-quality finishes, rich textures, and meticulous detailing enhance the overall ambience while creating a distinctive sense of luxury. This project showcases VAID Architects' expertise in luxury apartment interiors, contemporary interior design, premium residential interiors, bespoke home interiors, modern apartment design, space planning, turnkey interior solutions, and high-end interior execution, delivering sophisticated homes that combine exceptional craftsmanship with timeless design excellence.",
+            "gallery": [
+                "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_1.webp",
+                "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_2.webp",
+                "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_3.webp",
+                "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_4.webp",
+                "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_5.webp",
+                "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_6.webp",
+                "../../images/projects/interirors/apartments/Auro/Interirors_Apartments_Auro_7.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Aparna One",
+            "title": "Aparna One",
+            "location": "Shaikpet",
+            "siteArea": "4500 Sft",
+            "Type": "Modern Contempoary",
+            "img": "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_1.webp",
+            "description": "Located in Shaikpet, Aparna One is a 4,500 sq.ft. modern contemporary apartment interior designed by VAID Architects to deliver an exceptional living experience defined by elegance, sophistication, and functionality. The design embraces a clean contemporary aesthetic with thoughtfully planned open spaces, premium finishes, bespoke furnishings, and carefully layered lighting that create a luxurious yet welcoming ambience. Every area, from the expansive living and dining spaces to the designer kitchen, luxurious bedrooms, entertainment zones, and customized wardrobes, is meticulously crafted to maximize comfort, efficiency, and visual harmony. The interiors emphasize seamless space planning, natural daylight, refined material palettes, and high-quality craftsmanship to achieve a timeless and personalized home environment. Every design element is tailored to reflect the client's lifestyle while ensuring practicality for everyday living. This project highlights VAID Architects' expertise in luxury apartment interiors, modern contemporary interior design, premium residential interiors, bespoke home interiors, high-end apartment design, space planning, turnkey interior solutions, and custom interior execution, creating elegant homes that embody luxury, comfort, and enduring design excellence.",
+            "gallery": [
+                "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_1.webp",
+                "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_2.webp",
+                "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_3.webp",
+                "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_4.webp",
+                "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_5.webp",
+                "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_6.webp",
+                "../../images/projects/interirors/apartments/AparnaOne/wm/Interirors_Apartments_aparnaOne_7.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "My Home Bhooja1",
+            "title": "My home Bhooja ",
+            "location": "Hyderabad",
+            "siteArea": "2500 Sft",
+            "Type": "Luxuary Contemporary",
+            "img": "../../images/projects/interirors/apartments/MyhomeBhooja1/wm/Interirors_Apartments_MyhomeBhooja1_1.webp",
+            "description": "Located in Hyderabad, My Home Bhooja is a 2,500 sq.ft. luxury contemporary apartment interior designed by VAID Architects to redefine premium urban living through sophisticated design, exceptional craftsmanship, and personalized luxury. Every space is thoughtfully curated to create a seamless blend of elegance, comfort, and functionality, reflecting the refined lifestyle of modern homeowners. The interiors feature expansive living and dining areas, bespoke bedrooms, a designer kitchen, customized wardrobes, and meticulously detailed ceilings, lighting, and finishes that enhance the overall ambience. A carefully selected palette of premium materials, natural textures, and contemporary design elements creates a timeless aesthetic while maximizing natural light and spatial openness. Every detail is tailored to optimize space utilization and deliver a harmonious balance between visual appeal and everyday practicality. This project exemplifies VAID Architects' expertise in luxury apartment interiors, high-end residential interior design, modern contemporary interiors, bespoke home interiors, premium apartment design, turnkey interior solutions, space planning, and custom interior execution, creating elegant living environments that embody luxury, sophistication, and enduring design excellence.",
+            "gallery": [
+                "../../images/projects/interirors/apartments/MyhomeBhooja1/wm/Interirors_Apartments_MyhomeBhooja1_1.webp",
+                "../../images/projects/interirors/apartments/MyhomeBhooja1/wm/Interirors_Apartments_MyhomeBhooja1_2.webp",
+                "../../images/projects/interirors/apartments/MyhomeBhooja1/wm/Interirors_Apartments_MyhomeBhooja1_3.webp",
+                "../../images/projects/interirors/apartments/MyhomeBhooja1/wm/Interirors_Apartments_MyhomeBhooja1_4.webp",
+                "../../images/projects/interirors/apartments/MyhomeBhooja1/wm/Interirors_Apartments_MyhomeBhooja1_5.webp",
+                "../../images/projects/interirors/apartments/MyhomeBhooja1/wm/Interirors_Apartments_MyhomeBhooja1_6.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "My Home Bhooja2",
+            "title": "My Home Bhooja2 ",
+            "location": "Hyderabad",
+            "siteArea": "2500 Sft",
+            "Type": "Luxuary Contemporary",
+            "img": "../../images/projects/interirors/apartments/MyHomeBhooja2/wm/Interirors_Apartments_MyhomeBhooja2_1.webp",
+            "description": "Located in Hyderabad, My Home Bhooja is a 2,500 sq.ft. luxury contemporary apartment interior designed by VAID Architects to redefine premium urban living through sophisticated design, exceptional craftsmanship, and personalized luxury. Every space is thoughtfully curated to create a seamless blend of elegance, comfort, and functionality, reflecting the refined lifestyle of modern homeowners. The interiors feature expansive living and dining areas, bespoke bedrooms, a designer kitchen, customized wardrobes, and meticulously detailed ceilings, lighting, and finishes that enhance the overall ambience. A carefully selected palette of premium materials, natural textures, and contemporary design elements creates a timeless aesthetic while maximizing natural light and spatial openness. Every detail is tailored to optimize space utilization and deliver a harmonious balance between visual appeal and everyday practicality. This project exemplifies VAID Architects' expertise in luxury apartment interiors, high-end residential interior design, modern contemporary interiors, bespoke home interiors, premium apartment design, turnkey interior solutions, space planning, and custom interior execution, creating elegant living environments that embody luxury, sophistication, and enduring design excellence.",
+            "gallery": [
+                "../../images/projects/interirors/apartments/MyHomeBhooja2/wm/Interirors_Apartments_MyhomeBhooja2_1.webp",
+                "../../images/projects/interirors/apartments/MyHomeBhooja2/wm/Interirors_Apartments_MyhomeBhooja2_2.webp",
+                "../../images/projects/interirors/apartments/MyHomeBhooja2/wm/Interirors_Apartments_MyhomeBhooja2_3.webp",
+                "../../images/projects/interirors/apartments/MyHomeBhooja2/wm/Interirors_Apartments_MyhomeBhooja2_4.webp",
+                "../../images/projects/interirors/apartments/MyHomeBhooja2/wm/Interirors_Apartments_MyhomeBhooja2_5.webp",
+                "../../images/projects/interirors/apartments/MyHomeBhooja2/wm/Interirors_Apartments_MyhomeBhooja2_6.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "commercial": [
+        {
+            "id": "Pasura",
+            "title": "Pasura",
+            "location": "Madhapur",
+            "siteArea": "7000 Sft",
+            "Type": "Minimalistic Modern",
+            "img": "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_01.webp",
+            "description": "Located in Madhapur, Pasura is a 7,000 sq.ft. minimalistic modern commercial interior designed by VAID Architects to create a sophisticated, functional, and future-ready workspace. The design philosophy embraces clean architectural lines, uncluttered spaces, premium finishes, and intelligent space planning to deliver an environment that enhances productivity while reflecting a strong corporate identity. Every area is carefully planned to achieve a seamless balance between aesthetics and functionality, featuring elegant reception areas, collaborative workspaces, executive cabins, meeting rooms, breakout zones, and thoughtfully integrated support facilities. The interiors maximize natural daylight, efficient circulation, ergonomic layouts, and contemporary lighting solutions to create a comfortable and inspiring workplace. A restrained material palette, custom-designed furniture, and meticulous detailing reinforce the project's modern and timeless character. This project showcases VAID Architects' expertise in commercial interior design, office interior design, minimalist office interiors, modern workspace design, corporate interior architecture, turnkey commercial interiors, workspace planning, and high-end office fit-outs, delivering professional environments that inspire innovation, collaboration, and business growth.",
+            "gallery": [
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_01.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_02.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_03.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_04.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_05.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_06.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_07.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_08.webp",
+                "../../images/projects/interirors/commercial/Pasura/wm/Interirors_Commercial_Pasura_09.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Sreenivas Office",
+            "title": "Corporate Office",
+            "location": "Madhapur",
+            "siteArea": "2500 Sft",
+            "Type": "Classic Elegant",
+            "img": "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_01.webp",
+            "description": "Located in Madhapur, this 2,500 sq.ft. Corporate Office is a classic elegant commercial interior designed by VAID Architects to create a prestigious workplace that reflects professionalism, sophistication, and corporate excellence. The design combines timeless elegance with contemporary functionality, featuring refined material palettes, premium finishes, bespoke furniture, and carefully crafted architectural details that establish a distinguished business environment. Every space is meticulously planned to ensure seamless workflow and operational efficiency, incorporating executive cabins, collaborative workstations, conference rooms, reception areas, discussion lounges, and support spaces that encourage productivity and meaningful interaction. Warm lighting, balanced proportions, elegant textures, and customized interior elements create a welcoming yet authoritative ambience that enhances both employee experience and client impressions. The project demonstrates a harmonious blend of luxury, functionality, and enduring design aesthetics tailored to modern corporate requirements. This project highlights VAID Architects' expertise in corporate office interiors, commercial interior design, executive office design, luxury office interiors, workspace planning, classic office architecture, turnkey office fit-outs, and high-end commercial interiors, delivering workplaces that inspire confidence, efficiency, and long-term business success.",
+            "gallery": [
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_01.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_02.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_03.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_04.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_05.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_06.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_07.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_08.webp",
+                "../../images/projects/interirors/commercial/SrinivasOffice/wm/Interirors_Commercial_SrinivasOffice_09.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "farm-house": [
+        {
+            "id": "Earthy Interiors",
+            "title": "Earthy Interiors",
+            "location": "Hyderabad",
+            "siteArea": "5000 Sft",
+            "Type": "Farm House",
+            "img": "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_1.webp",
+            "description": "Located in Hyderabad, Earthy Interiors is a 5,000 sq.ft. farmhouse interior designed by VAID Architects to celebrate the beauty of nature through warm, earthy aesthetics and timeless architectural elegance. Inspired by the tranquil farmhouse lifestyle, the interiors seamlessly blend natural materials, handcrafted finishes, organic textures, and contemporary comforts to create a serene and luxurious retreat. Spacious living areas, inviting lounges, elegant bedrooms, a thoughtfully designed kitchen, and indoor-outdoor transition spaces are carefully planned to maximize openness, natural ventilation, and abundant daylight. A harmonious palette of wood, natural stone, earthy tones, and subtle lighting enhances the connection between the built environment and the surrounding landscape, creating a calming and immersive living experience. Every detail is customized to reflect the client's lifestyle while maintaining a perfect balance between rustic charm and modern sophistication. This project showcases VAID Architects' expertise in farmhouse interior design, luxury farmhouse interiors, earthy contemporary interiors, premium residential interiors, nature-inspired interior design, bespoke home interiors, space planning, and turnkey interior solutions, delivering elegant farmhouse environments that offer comfort, tranquility, and timeless design excellence.",
+            "gallery": [
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_1.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_2.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_3.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_4.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_5.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_6.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_7.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_8.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_9.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_10.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_11.webp",
+                "../../images/projects/interirors/farmhouse/Contemporaryfarmhouse/wm/Interirors_farmhouse_contemporaryfarmhouse_12.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Manduva",
+            "title": "Manduva",
+            "location": "Mokila",
+            "siteArea": "4 Acres",
+            "Type": "Traditional",
+            "img": "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_1.webp",
+            "description": "Located in Mokila, Manduva is a 4-acre traditional farmhouse interior designed by VAID Architects to preserve the timeless essence of Indian heritage while embracing the comforts of modern living. Inspired by the iconic Manduva house concept, the interiors celebrate traditional architecture through a harmonious blend of natural materials, handcrafted woodwork, exposed textures, heritage detailing, and spacious courtyards that foster light, ventilation, and a deep connection with nature. Every interior space is thoughtfully planned to create warm and inviting living areas, elegant bedrooms, traditional kitchens, and peaceful gathering spaces that reflect cultural authenticity without compromising contemporary functionality. Earthy colour palettes, artisanal finishes, and carefully curated décor elements enhance the home's rustic charm, creating an atmosphere of serenity and understated luxury. Seamless transitions between indoor and outdoor spaces further strengthen the relationship between architecture and the surrounding landscape. This project showcases VAID Architects' expertise in traditional farmhouse interiors, Manduva house interiors, heritage-inspired interior design, luxury farmhouse interiors, bespoke residential interiors, natural material design, space planning, and turnkey interior solutions, delivering timeless homes that honour tradition while offering exceptional comfort and refined living.",
+            "gallery": [
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_1.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_2.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_3.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_4.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_5.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_6.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_7.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_8.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_9.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_10.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_11.webp",
+                "../../images/projects/interirors/farmhouse/ManduvaFarmhouse/wm/Interirors_farmhouse_Manduvafarmhouse_12.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "Restaurant": [
+        {
+            "id": "Runway-9",
+            "title": "Runway-9",
+            "location": "Gajwal",
+            "siteArea": "2.5 Acres",
+            "Type": "Restaurant",
+            "img": "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_1.webp",
+            "description": "Located in Gajwel, Runway-9 is a 2.5-acre restaurant interior project designed by VAID Architects to deliver an immersive dining experience where architecture, ambience, and hospitality come together seamlessly. The interiors are thoughtfully crafted to create a warm, contemporary environment that enhances guest comfort while reflecting the restaurant's unique identity. Every space, including the entrance lobby, indoor dining areas, private seating zones, café spaces, service counters, and outdoor dining connections, is carefully planned to ensure efficient circulation, operational functionality, and memorable customer experiences. Premium materials, elegant lighting, natural textures, and bespoke furnishings create a sophisticated atmosphere that appeals to families, social gatherings, and fine dining guests alike. The design balances aesthetics with practicality, providing durable finishes and optimized layouts that support smooth restaurant operations while maintaining an inviting ambience. This project showcases VAID Architects' expertise in restaurant interior design, hospitality interiors, fine dining restaurant design, café interior design, luxury restaurant interiors, commercial hospitality design, turnkey restaurant interiors, and food and beverage space planning, delivering distinctive dining environments that elevate guest experiences and strengthen",
+            "gallery": [
+                "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_1.webp",
+                "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_2.webp",
+                "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_3.webp",
+                "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_4.webp",
+                "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_5.webp",
+                "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_6.webp",
+                "../../images/projects/interirors/restaurant/Runway9/AI/wm/Interiors_restaurant_runway9_AI_7.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_1.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_2.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_3.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_4.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_5.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_6.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_7.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_8.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_9.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_10.webp",
+                "../../images/projects/interirors/restaurant/Runway9/WM/Interiors_restaurant_wm_11.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "hospitals": [
+        {
+            "id": "Eledent",
+            "title": "Eledent",
+            "location": "Banjara Hills",
+            "siteArea": " 2000 Sft",
+            "Type": "Beige Modern",
+            "img": "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_01.webp",
+            "description": "Located in Banjara Hills, Eledent is a 2,000 sq.ft. modern healthcare interior designed by VAID Architects to create a calming, patient-centric environment that combines clinical efficiency with contemporary aesthetics. Designed with a refined beige modern theme, the interiors feature soft neutral tones, elegant finishes, ergonomic layouts, and thoughtfully integrated lighting to foster a welcoming and stress-free atmosphere for patients, visitors, and healthcare professionals. Every space, including the reception, waiting lounge, consultation rooms, treatment areas, and support facilities, is meticulously planned to ensure smooth workflow, hygiene, privacy, and operational efficiency. The design maximizes natural light, intuitive circulation, and optimized space utilization while maintaining a clean and sophisticated ambience that reflects the highest standards of healthcare design. Premium materials and meticulous detailing further enhance durability, comfort, and functionality. This project showcases VAID Architects' expertise in hospital interior design, clinic interior design, healthcare interiors, dental clinic interiors, patient-centric healthcare design, medical facility planning, turnkey healthcare interiors, and modern clinical environments, delivering spaces that promote wellness, operational excellence, and a superior patient experience.",
+            "gallery": [
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_01.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_02.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_03.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_04.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_05.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_06.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_07.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_08.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_09.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_10.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_11.webp",
+                "../../images/projects/interirors/hospital/ELEDENT/wm/Interirors_Hospital_Eledent_12.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "Industrial": [
+        {
+            "id": "ICHOR",
+            "title": "ICHOR",
+            "location": "Shamirpet",
+            "siteArea": "50000 Sft",
+            "Type": "Industrial",
+            "img": "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_1.webp",
+            "description": "Located in Shamirpet, ICHOR is a 50,000 sq.ft. industrial interior project designed by VAID Architects to create a highly efficient, functional, and future-ready environment for research, production, and administrative operations. The interiors are planned to support industrial workflows through intelligent space planning, ergonomic layouts, and seamless integration of operational, technical, and office spaces. Designed with durability, safety, and efficiency as core principles, the project incorporates spacious work areas, laboratories, administrative offices, meeting rooms, employee amenities, and circulation zones that ensure smooth day-to-day operations. The design emphasizes optimized workflow, high-performance materials, easy maintenance, adequate lighting, ventilation, and compliance with industrial standards while creating a professional and comfortable work environment. Every interior element is carefully considered to enhance productivity, operational efficiency, and employee well-being without compromising functionality. This project showcases VAID Architects' expertise in industrial interior design, research facility interiors, production facility planning, laboratory interiors, industrial workspace design, industrial office interiors, turnkey industrial interiors, and industrial facility planning, delivering modern industrial environments that support innovation, operational excellence, and long-term business growth.",
+            "gallery": [
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_1.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_2.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_3.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_4.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_5.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_6.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_7.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_8.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_9.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_10.webp",
+                "../../images/projects/interirors/industrial/ICHOR/wm/Interirors_industrial_ichor_11.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "institution": [
+        {
+            "id": "Ayra",
+            "title": "Ayra",
+            "location": "Banglore",
+            "siteArea": "4 Acres",
+            "Type": "Institution",
+            "img": "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_01.webp",
+            "description": "Located in Bangalore, AYRA is a 4-acre institutional interior project designed by VAID Architects to create dynamic, functional, and inspiring spaces that support education, sports, collaboration, and community engagement. The interiors are thoughtfully planned to accommodate a wide range of institutional functions, including administrative offices, training facilities, multipurpose halls, meeting spaces, student activity zones, lounges, and support amenities within a cohesive and user-centric environment. The design emphasizes efficient space planning, intuitive circulation, abundant natural light, durable materials, and contemporary finishes to ensure long-lasting performance and user comfort. A balanced combination of modern aesthetics, ergonomic planning, and sustainable design principles creates welcoming interiors that encourage productivity, learning, interaction, and well-being. Every space is tailored to meet the operational requirements of modern institutional facilities while maintaining flexibility for future growth and evolving needs. This project showcases VAID Architects' expertise in institutional interior design, educational interiors, sports facility interiors, campus interior planning, public building interiors, modern institutional architecture, turnkey institutional interiors, and space planning for educational environments, delivering thoughtfully designed spaces that enhance learning, collaboration, and community experiences.",
+            "gallery": [
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_01.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_02.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_03.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_04.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_05.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_07.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_08.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_09.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_10.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_14.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_15.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_16.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_17.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_18.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_19.webp",
+                "../../images/projects/interirors/institutions/Ayra/wm/Interiors_Institutions_arya_20.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "sports": [
+        {
+            "id": "Ayra",
+            "title": "Ayra",
+            "location": "Banglore",
+            "siteArea": "4 Acres",
+            "Type": "Institution",
+            "img": "../../images/projects/interirors/sports/Ayra/wm/Interiors_sports_ayra_1.webp",
+            "description": "Located in Bangalore, AYRA is a 4-acre sports interior project designed by VAID Architects to create dynamic, high-performance spaces that inspire athletic excellence, wellness, and community engagement. The interiors are thoughtfully planned to support a wide range of sporting activities, incorporating reception areas, athlete lounges, training zones, fitness spaces, multipurpose halls, locker rooms, spectator amenities, and administrative facilities within a cohesive and contemporary environment. Designed with functionality and durability at its core, the project features ergonomic layouts, high-quality finishes, efficient circulation, and abundant natural light to ensure a comfortable and motivating experience for athletes, coaches, and visitors alike. The interiors seamlessly integrate modern aesthetics with practical planning, creating flexible spaces that accommodate training, recreation, competitions, and social interaction. Every design element is tailored to enhance user comfort, operational efficiency, and long-term performance while reflecting the energy and spirit of modern sports facilities. This project showcases VAID Architects' expertise in sports interior design, sports complex interiors, fitness centre design, athletic facility interiors, recreational space planning, institutional sports interiors, turnkey sports facility interiors, and high-performance recreational environments, delivering inspiring spaces that foster health, performance, and community participation.",
+            "gallery": [
+                "../../images/projects/interirors/sports/Ayra/wm/Interiors_sports_ayra_1.webp",
+                "../../images/projects/interirors/sports/Ayra/wm/Interiors_sports_ayra_2.webp",
+                "../../images/projects/interirors/sports/Ayra/wm/Interiors_sports_ayra_3.webp",
+                "../../images/projects/interirors/sports/Ayra/wm/Interiors_sports_ayra_4.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Bluebay",
+            "title": "Blue bay",
+            "location": "Vishakapatnam",
+            "siteArea": "7 Acres",
+            "Type": "ClubHouse",
+            "img": "../../images/projects/interirors/sports/Bluebay/wm/Interiors_sports_bluebay_1.webp",
+            "description": "Located in Visakhapatnam, Blue Bay Clubhouse is a 7-acre premium clubhouse interior project designed by VAID Architects to create a vibrant social and recreational destination for a luxury gated community. The interiors are thoughtfully planned to offer an exceptional lifestyle experience through elegant design, functional planning, and premium amenities. Every space, including the grand reception, multipurpose hall, indoor games area, fitness centre, lounge, café, children's activity zones, and wellness spaces, is seamlessly integrated to encourage recreation, relaxation, and community interaction. The design embraces a contemporary aesthetic with sophisticated material palettes, natural lighting, refined textures, and bespoke interior elements that create a warm and luxurious ambience. Efficient circulation, flexible layouts, and durable finishes ensure long-term functionality while enhancing user comfort and operational efficiency. Every detail reflects the lifestyle aspirations of modern residents and strengthens the clubhouse as the heart of the community. This project showcases VAID Architects' expertise in clubhouse interior design, luxury clubhouse interiors, amenity space design, recreational facility interiors, gated community clubhouse design, fitness and wellness interiors, turnkey clubhouse interiors, and premium community space planning, delivering inspiring environments that promote leisure, wellness, and social engagement.",
+            "gallery": [
+                "../../images/projects/interirors/sports/Bluebay/wm/Interiors_sports_bluebay_1.webp",
+                "../../images/projects/interirors/sports/Bluebay/wm/Interiors_sports_bluebay_2.webp",
+                "../../images/projects/interirors/sports/Bluebay/wm/Interiors_sports_bluebay_3.webp",
+                "../../images/projects/interirors/sports/Bluebay/wm/Interiors_sports_bluebay_4.webp"
+            ],
+            "visible": true
+        }
+    ],
+    "villa": [
+        {
+            "id": "Akhil",
+            "title": "Modern Minimalist Design",
+            "location": "Kukatpally",
+            "siteArea": "6000 Sft",
+            "Type": "Modern Minimalist",
+            "img": "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_1.webp",
+            "description": "Located in Kukatpally, this 6,000 sq.ft. modern minimalist villa interior by VAID Architects is designed to create a luxurious living environment where simplicity, elegance, and functionality coexist in perfect harmony. The design embraces a clean architectural language with open layouts, uncluttered spaces, premium materials, and a refined neutral palette that enhances the sense of space and tranquillity. Every interior, including the grand living room, dining area, designer kitchen, luxurious bedrooms, walk-in wardrobes, entertainment spaces, and private lounges, is thoughtfully planned to maximize natural light, ventilation, and seamless spatial flow. Bespoke furniture, concealed storage, sophisticated lighting, and meticulous detailing contribute to a timeless aesthetic while ensuring exceptional comfort for modern living. Every element is carefully curated to reflect understated luxury without compromising practicality or personalization. This project showcases VAID Architects' expertise in luxury villa interiors, modern minimalist interior design, premium residential interiors, contemporary villa interiors, bespoke home interiors, space planning, turnkey villa interior solutions, and high-end interior execution, delivering elegant homes that embody sophistication, comfort, and timeless design excellence.",
+            "gallery": [
+                "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_1.webp",
+                "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_2.webp",
+                "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_3.webp",
+                "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_4.webp",
+                "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_5.webp",
+                "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_6.webp",
+                "../../images/projects/interirors/villa/Ahkil/wm/Interiors_Vila_Ahkil_7.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Bikki",
+            "title": "Highend Luxuary Design",
+            "location": "Himayat Nagar",
+            "siteArea": "7500 Sft",
+            "Type": "Highend Luxuary",
+            "img": "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_1.webp",
+            "description": "Located in Himayat Nagar, this 7,500 sq.ft. high-end luxury villa interior by VAID Architects is a sophisticated expression of timeless elegance, bespoke craftsmanship, and contemporary living. Every space is meticulously designed to deliver an exclusive residential experience, blending luxurious materials, refined detailing, and exceptional functionality. The interiors feature grand living and dining spaces, designer bedrooms, walk-in wardrobes, a premium modular kitchen, entertainment lounges, and elegant private areas, all thoughtfully planned to maximize comfort, natural light, and seamless circulation. Rich textures, imported finishes, statement lighting, custom-designed furniture, and carefully curated décor elements create an atmosphere of understated opulence while maintaining a warm and inviting ambience. Every detail reflects precision, quality, and personalization, ensuring the home perfectly complements the lifestyle of discerning homeowners. This project showcases VAID Architects' expertise in high-end luxury interiors, luxury villa interior design, premium residential interiors, bespoke home interiors, contemporary luxury living spaces, turnkey interior solutions, custom interior design, and space planning, delivering elegant residences that combine timeless aesthetics, superior craftsmanship, and uncompromising luxury.",
+            "gallery": [
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_1.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_2.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_3.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_4.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_5.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_6.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_7.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_8.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_9.webp",
+                "../../images/projects/interirors/villa/Bikki/wm/Interiors_Vila_Bikki_10.webp"
+            ],
+            "visible": true
+        },
+        {
+            "id": "Teju",
+            "title": "Organic Highend Design",
+            "location": "Hyderabad",
+            "siteArea": "6000 Sft ",
+            "Type": "Organic Highend",
+            "img": "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_1.webp",
+            "description": "Located in Hyderabad, this 6,000 sq.ft. organic high-end villa interior by VAID Architects is a harmonious blend of luxury, nature, and contemporary design. Inspired by organic forms and biophilic principles, the interiors create a serene living environment through the thoughtful use of natural materials, earthy textures, warm colour palettes, and abundant natural light. Every space, including the living and dining areas, designer kitchen, luxurious bedrooms, walk-in wardrobes, family lounge, and wellness-inspired spaces, is carefully planned to promote comfort, functionality, and a seamless connection with nature. Premium stone, natural wood, handcrafted finishes, bespoke furniture, and soft ambient lighting enhance the timeless elegance of the home while delivering a refined yet welcoming atmosphere. The design prioritizes sustainability, spaciousness, and personalized luxury, ensuring every corner reflects sophistication without compromising warmth and practicality. This project showcases VAID Architects' expertise in organic luxury interiors, high-end villa interior design, biophilic interior design, premium residential interiors, bespoke luxury homes, contemporary villa interiors, turnkey interior solutions, and space planning, delivering elegant residences that celebrate natural beauty, exceptional craftsmanship, and timeless luxury.",
+            "gallery": [
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_1.webp",
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_2.webp",
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_3.webp",
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_4.webp",
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_5.webp",
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_6.webp",
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_7.webp",
+                "../../images/projects/interirors/villa/Teju/wm/Interiors_Vila_Teju_8.webp"
+            ],
+            "visible": true
+        }
+    ]
+}
